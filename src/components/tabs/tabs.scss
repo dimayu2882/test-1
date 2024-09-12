@@ -1,0 +1,48 @@
+@import "../../styles/helpers/variables";
+
+/* Tabs menu */
+.tabs {
+  display: flex;
+
+  &__link {
+    cursor: pointer;
+  }
+}
+
+.tabs__content {
+  overflow: hidden;
+  opacity: 1;
+  transition: all 1s ease;
+
+  &__item {
+    display: none;
+
+    h3 {
+      margin-bottom: 60px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 147.3%;
+      color: #1E1E1E;
+      text-transform: uppercase;
+    }
+
+    &.active {
+      display: block;
+      padding: 0 10%;
+      transition: all 1s ease;
+      animation: fadeEffect 0.6s ease;
+    }
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    margin-left: 30px;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}

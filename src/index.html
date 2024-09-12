@@ -1,0 +1,2690 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="robots" content="none" />
+	<link rel="icon" href="img/favicon.ico" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="img/favicon.ico">
+	<title>M2O2</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.29/fancybox.min.css" />
+	<link rel="stylesheet" href="./styles/styles.scss" />
+	
+	<script type="module" src="./js/main.js"></script>
+</head>
+
+<body class="page-template-page-template-land">
+
+<!-- Header start -->
+<header class="header" id="#header">
+	<div class="wrapper">
+		<div class="header__items">
+			<a href="/" class="header__items__logo">
+				<picture>
+					<img src="./img/logo.svg" alt="logo" width="86" height="32">
+				</picture>
+			</a>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__list__item link-genplan">
+						<a href="#genplan" class="nav__list__item__link nav__list__item__link--active">Генплан</a>
+					</li>
+					<li class="nav__list__item link-gallery">
+						<a href="#gallery" class="nav__list__item__link">Галерея</a>
+					</li>
+					<li class="nav__list__item link-environment">
+						<a href="#environment" class="nav__list__item__link">Окружение</a>
+					</li>
+					<li class="nav__list__item link-innovative">
+						<a href="#innovative" class="nav__list__item__link">Сервисы</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__items__right">
+				<div class="header__items__phones">
+					<a href="tel:+7 (495) 241-6000" class="header__items__phones__item">
+						<span class="text-B1">+7 (495) 241-6000</span>
+						<p class="text-T3">покупка участков</p>
+					</a>
+					<a href="tel:+7 (499) 460-4251" class="header__items__phones__item">
+						<span class="text-B1">+7 (499) 460-4251</span>
+						<p class="text-T3">отдых</p>
+					</a>
+				</div>
+				<button class="btn-secondary js-modal" data-modal="#modal_1">
+					Оставить заявку
+				</button>
+				<button class="btn js-modal btn-tablet" data-modal="#modal_1">
+					<i class="icon icon-messages"></i>
+				</button>
+			</div>
+			<button class="burger js-modal" data-modal="#modal__menu" aria-label="Меню">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</div>
+</header>
+<!-- Header end -->
+
+<!-- Main start -->
+<main class="main">
+	<section id="promo" class="promo-village promo promo-village-1">
+		<div class="wrapper">
+			<div class="promo-village__items">
+				<div class="promo-village__items__text">
+					<h1 class="section__title text-H3">видовой участок в уютном посёлке за</h1>
+					<h3 class="text-H1">1,25 млн руб.</h3>
+					<h2 class="section__subtitle">
+						<i class="icon icon-location"></i>
+						<span class="text-T1">Симферопольское шоссе, 110 км. от МКАД</span>
+					</h2>
+					<div class="btns">
+						<a href="#genplan" class="btn-secondary">Перейти к генплану</a>
+						<button class="btn-primary" data-modal="#modal_1">Оставить заявку</button>
+					</div>
+				</div>
+				<div class="promo-chips">
+					<div class="promo-chips__item">
+						<i class="icon icon-tick-circle"></i>
+						<span class="text-T2">Все коммуникации подключены</span>
+					</div>
+					<div class="promo-chips__item">
+						<i class="icon icon-tick-circle"></i>
+						<span class="text-T2">Все коммуникации подключены, все супер</span>
+					</div>
+					<div class="promo-chips__item">
+						<i class="icon icon-tick-circle"></i>
+						<span class="text-T2">Все коммуникации подключены, все супер</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="promo__bg">
+			<!--            <picture class="promo__bg__pic">-->
+			<!--                <source srcset="img/bg-promo-big.jpg" media="(min-width: 940px)">-->
+			<!--                <img src="img/bg-promo-big.jpg" alt="bg" width="1440" height="792">-->
+			<!--            </picture>-->
+			<video width="100%" height="100%" autoplay loop muted class="promo__bg__pic">
+				<source src="img/video.MP4" type="video/mp4">
+			</video>
+		</div>
+	</section>
+	<section id="promo" class="promo-village promo">
+		<div class="wrapper">
+			<div class="promo-village__items">
+				<div class="promo-village__items__text">
+					<div class="promo-village__items__text__content">
+						<div class="promo-village__price chips__item">
+							<span class="t-1">от 300 000 руб.</span>
+							<i class="icon icon-shopping-cart"></i>
+						</div>
+						<h1 class="section__title text-H2">Земельные участки ИЖС в московской области</h1>
+						<h2 class="text-T1B section__subtitle">Переезжайте загород для покоя и спокойствия</h2>
+						<button class="btn-primary">Оставить заявку</button>
+						<div class="lid">
+							<button class="btn-primary btn-lid btn-lid--1">
+								<span class="b-2">ПОЛУЧИТЬ 3d-каталог</span>
+								<i class="icon icon-arrow-right-1"></i>
+							</button>
+							<p class="t-2">Заполните заявку, чтобы осмотреть посёлок в 3D</p>
+						</div>
+						<div class="lid">
+							<button class="btn-primary btn-lid btn-lid--2">
+								<span class="b-2">Получить генплан с ценами</span>
+								<i class="icon icon-arrow-right-1"></i>
+							</button>
+							<p class="t-2">Заполните заявку, чтобы осмотреть посёлок в 3D</p>
+						</div>
+						<div class="lid">
+							<button class="btn-primary btn-lid btn-lid--3">
+								<span class="b-2">Записаться на просмотр</span>
+								<i class="icon icon-arrow-right-1"></i>
+							</button>
+							<p class="t-2">Заполните заявку, чтобы осмотреть посёлок в 3D</p>
+						</div>
+						<div class="lid">
+							<button class="btn-primary btn-lid btn-lid--4">
+								<span class="b-2">Получить презентацию</span>
+								<i class="icon icon-arrow-right-1"></i>
+							</button>
+							<p class="t-2">Заполните заявку, чтобы осмотреть посёлок в 3D</p>
+						</div>
+						<div class="promo-village__items__text__images">
+							<picture>
+								<source srcset="img/img-4.webp" type="image/webp">
+								<img src="img/img-4.png" alt="pic" width="113" height="275">
+							</picture>
+							<picture>
+								<source srcset="img/img-5.webp" type="image/webp">
+								<img src="img/img-5.png" alt="pic" width="110" height="266">
+							</picture>
+						</div>
+					</div>
+					<div class="promo-chips">
+						<div class="promo-chips__item">
+							<i class="icon icon-tick-circle"></i>
+							<span class="text-T2">Доступны участки у озера, пруда или леса</span>
+						</div>
+						<div class="promo-chips__item">
+							<i class="icon icon-tick-circle"></i>
+							<span class="text-T2">Скидки на полянные участки до 5%</span>
+						</div>
+						<div class="promo-chips__item">
+							<i class="icon icon-tick-circle"></i>
+							<span class="text-T2">Сельская или IT ипотека для строительства дома</span>
+						</div>
+					</div>
+				</div>
+				<div class="promo-village__items__image">
+					<picture>
+						<!--                        <source srcset="img/promo-image.webp" type="image/webp">-->
+						<img src="img/promo.jpg" alt="slide" width="640" height="640">
+					</picture>
+				</div>
+			</div>
+		</div>
+		<div class="promo__bg">
+			<picture class="promo__bg__pic">
+				<source srcset="img/bg-promo-big.jpg" media="(min-width: 940px)">
+				<img src="img/bg-promo.jpg" alt="bg" width="430" height="754">
+			</picture>
+		</div>
+	</section>
+	<section class="section section-offers">
+		<div class="wrapper">
+			<div class="section-offers__items">
+				<div class="section-offers__items__item">
+					<div class="section-offers__items__item__title">
+						<h3 class="text-H4">Инфраструктура</h3>
+						<i class="icon icon-building"></i>
+					</div>
+					<ul class="section-offers__items__item__list">
+						<li class="text-T1">КПП с автоматикой</li>
+						<li class="text-T1">КПП с автоматикой</li>
+						<li class="text-T1">67 кв. км. лесов и полей</li>
+					</ul>
+				</div>
+				<div class="section-offers__items__item">
+					<div class="section-offers__items__item__title">
+						<h3 class="text-H4">Инфраструктура</h3>
+						<i class="icon icon-lamp-charge"></i>
+					</div>
+					<ul class="section-offers__items__item__list">
+						<li class="text-T1">КПП с автоматикой</li>
+						<li class="text-T1">КПП с автоматикой</li>
+						<li class="text-T1">КПП с автоматикой</li>
+					</ul>
+				</div>
+				<div class="section-offers__items__item">
+					<div class="section-offers__items__item__title">
+						<h3 class="text-H4">Инфраструктура</h3>
+						<i class="icon icon-location-tick"></i>
+					</div>
+					<ul class="section-offers__items__item__list">
+						<li class="text-T1">КПП с автоматикой</li>
+						<li class="text-T1">КПП с автоматикой</li>
+						<li class="text-T1">КПП с автоматикой</li>
+					</ul>
+				</div>
+				<div class="section-offers__items__item">
+					<div class="section-offers__items__item__title">
+						<h3 class="text-H4">Инфраструктура</h3>
+						<i class="icon icon-tick-circle"></i>
+					</div>
+					<ul class="section-offers__items__item__list">
+						<li class="text-T1">КПП с автоматикой</li>
+						<li class="text-T1">КПП с автоматикой</li>
+						<li class="text-T1">КПП с автоматикой</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="sections-main">
+		<section class="section section-map">
+			<div class="wrapper">
+				<div class="inner">
+					<div class="section-map__items">
+						<div class="section-map__items__item section-map__items__item-pic">
+							<video width="100%" height="100%" playsinline autoplay loop muted>
+								<source src="img/map.webm" type="video/webm">
+								<source src="img/map.MP4" type="video/mp4">
+							</video>
+						</div>
+						<div class="section-map__items__item section-map__items__item-content">
+							<h2 class="text-H4 section__title">Участки недалеко от Серпухова</h2>
+							<h3 class="text-T1 section__subtitle">Подарите спокойствие и чистую природу своим родным и близким,
+								купив участок для
+								строительства дома в экологически чистом районе.</h3>
+							<div class="content-description">
+								<div class="content-description__item">
+									<i class="icon icon-buildings-2"></i>
+									<p>
+										<span class="text-T1B">«Инвест недвижимость»</span>
+										<span class="text-T2">(более 15-ти посёлков)</span>
+									</p>
+								</div>
+								<div class="content-description__item">
+									<i class="icon icon-location"></i>
+									<p>
+										<span class="text-T1B">Заокский район, Тульская область</span>
+									</p>
+								</div>
+							</div>
+							<a href="#" class="btn-primary" target="_blank">Посмотреть на карте</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-numbers">
+			<div class="wrapper">
+				<div class="section-numbers__items">
+					<div class="section-numbers__items__item">
+						<p class="text-H1">9</p>
+						<p class="text-T1">посёлков<br>
+							в продаже</p>
+					</div>
+					<div class="section-numbers__items__item">
+						<div class="section-numbers__items__item__number">
+							<p class="text-H1">177</p>
+						</div>
+						<p class="text-T1">участков у леса</p>
+					</div>
+					<div class="section-numbers__items__item">
+						<div class="section-numbers__items__item__number">
+							<p class="text-H1">35</p>
+						</div>
+						<p class="text-T1">участков у воды</p>
+					</div>
+					<div class="section-numbers__items__item">
+						<div class="section-numbers__items__item__number">
+							<p class="text-H1">17</p>
+							<span class="t-1">ГА</span>
+						</div>
+						<p class="text-T1">рукотворное озеро</p>
+					</div>
+					<div class="section-numbers__items__item">
+						<div class="section-numbers__items__item__number">
+							<p class="text-H1">16</p>
+						</div>
+						<p class="text-T1">лет на рынке</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-plots">
+			<div class="wrapper">
+				<div class="section-plots__header">
+					<h2 class="text-H2 section__title">Подходящие участки</h2>
+					<div class="swiper-button-next btn btn-round">
+						<i class="icon icon-arrow-right-1"></i>
+					</div>
+					<div class="swiper-button-prev btn btn-round">
+						<i class="icon icon-arrow-left"></i>
+					</div>
+				</div>
+				<div class="section-plots__items js-hover__items swiper plots__slider">
+					<div class="swiper-wrapper">
+						<div class="section-plots__items__item plot js-hover__item swiper-slide">
+							<div class="section-plots__items__item__pic">
+								<video width="100%" height="100%" autoplay loop muted class="">
+									<source src="img/video.MP4" type="video/mp4">
+								</video>
+							</div>
+							<div class="section-plots__items__item__text plot__text">
+								<div class="plot__title">
+									<h4 class="text-H4">Участок А3-40</h4>
+									<div class="plot__title__size">
+										<span class="text-T1">12 сот.</span>
+									</div>
+								</div>
+								<div class="plot__desc">
+									<i class="icon icon-location"></i>
+									<a href="#" class="text-B1 link-green--underline">«КП Гельвеция»</a>
+								</div>
+								<div class="plot__communications">
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">Газ</span>
+									</div>
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">вода</span>
+									</div>
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">электричество</span>
+									</div>
+								</div>
+								<div class="plot__prices">
+									<div class="plot__prices__old">
+										638 600
+										<span class="text-T1">руб</span>
+									</div>
+									<div class="plot__prices__new text-H3">
+										638 600
+										<span class="text-T1">руб</span>
+									</div>
+								</div>
+								<div class="plot__advantages">
+									<h5 class="text-T1">Преимущества участка:</h5>
+									<div class="chips">
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">У воды</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item--more">
+											<span class="text-T2">...</span>
+										</div>
+									</div>
+								</div>
+								<div class="plot__btns">
+									<a href="#genplan" class="btn-primary btn-genplan"
+									   data-villageId="94fe06db-0048-4c2b-8d32-2659e68f5bbf"
+									   data-landId="14563">Посмотреть</a>
+								</div>
+							</div>
+						</div>
+						<div class="section-plots__items__item plot js-hover__item swiper-slide">
+							<div class="section-plots__items__item__pic">
+								<video width="100%" height="100%" autoplay loop muted class="">
+									<source src="img/video.MP4" type="video/mp4">
+								</video>
+							</div>
+							<div class="section-plots__items__item__text plot__text">
+								<div class="plot__title">
+									<h4 class="text-H4">Участок А3-40</h4>
+									<div class="plot__title__size">
+										<span class="text-T1">12 сот.</span>
+									</div>
+								</div>
+								<div class="plot__desc">
+									<i class="icon icon-location"></i>
+									<a href="#" class="text-B1 link-green--underline">«КП Гельвеция»</a>
+								</div>
+								<div class="plot__communications">
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">Газ</span>
+									</div>
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">вода</span>
+									</div>
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">электричество</span>
+									</div>
+								</div>
+								<div class="plot__prices">
+									<div class="plot__prices__old">
+										638 600
+										<span class="text-T1">руб</span>
+									</div>
+									<div class="plot__prices__new text-H3">
+										638 600
+										<span class="text-T1">руб</span>
+									</div>
+								</div>
+								<div class="plot__advantages">
+									<h5 class="text-T1">Преимущества участка:</h5>
+									<div class="chips">
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">У воды</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item--more">
+											<span class="text-T2">...</span>
+										</div>
+									</div>
+								</div>
+								<div class="plot__btns">
+									<a href="#genplan" class="btn-primary btn-genplan"
+									   data-villageId="94fe06db-0048-4c2b-8d32-2659e68f5bbf"
+									   data-landId="14563">Посмотреть</a>
+								</div>
+							</div>
+						</div>
+						<div class="section-plots__items__item plot js-hover__item swiper-slide">
+							<div class="section-plots__items__item__pic">
+								<video width="100%" height="100%" autoplay loop muted class="">
+									<source src="img/video.MP4" type="video/mp4">
+								</video>
+							</div>
+							<div class="section-plots__items__item__text plot__text">
+								<div class="plot__title">
+									<h4 class="text-H4">Участок А3-40</h4>
+									<div class="plot__title__size">
+										<span class="text-T1">12 сот.</span>
+									</div>
+								</div>
+								<div class="plot__desc">
+									<i class="icon icon-location"></i>
+									<a href="#" class="text-B1 link-green--underline">«КП Гельвеция»</a>
+								</div>
+								<div class="plot__communications">
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">Газ</span>
+									</div>
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">вода</span>
+									</div>
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">электричество</span>
+									</div>
+								</div>
+								<div class="plot__prices">
+									<div class="plot__prices__old">
+										638 600
+										<span class="text-T1">руб</span>
+									</div>
+									<div class="plot__prices__new text-H3">
+										638 600
+										<span class="text-T1">руб</span>
+									</div>
+								</div>
+								<div class="plot__advantages">
+									<h5 class="text-T1">Преимущества участка:</h5>
+									<div class="chips">
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">У воды</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item--more">
+											<span class="text-T2">...</span>
+										</div>
+									</div>
+								</div>
+								<div class="plot__btns">
+									<a href="#genplan" class="btn-primary btn-genplan"
+									   data-villageId="94fe06db-0048-4c2b-8d32-2659e68f5bbf"
+									   data-landId="14563">Посмотреть</a>
+								</div>
+							</div>
+						</div>
+						<div class="section-plots__items__item plot js-hover__item swiper-slide">
+							<div class="section-plots__items__item__pic">
+								<video width="100%" height="100%" autoplay loop muted class="">
+									<source src="img/video.MP4" type="video/mp4">
+								</video>
+							</div>
+							<div class="section-plots__items__item__text plot__text">
+								<div class="plot__title">
+									<h4 class="text-H4">Участок А3-40</h4>
+									<div class="plot__title__size">
+										<span class="text-T1">12 сот.</span>
+									</div>
+								</div>
+								<div class="plot__desc">
+									<i class="icon icon-location"></i>
+									<a href="#" class="text-B1 link-green--underline">«КП Гельвеция»</a>
+								</div>
+								<div class="plot__communications">
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">Газ</span>
+									</div>
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">вода</span>
+									</div>
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">электричество</span>
+									</div>
+								</div>
+								<div class="plot__prices">
+									<div class="plot__prices__old">
+										638 600
+										<span class="text-T1">руб</span>
+									</div>
+									<div class="plot__prices__new text-H3">
+										638 600
+										<span class="text-T1">руб</span>
+									</div>
+								</div>
+								<div class="plot__advantages">
+									<h5 class="text-T1">Преимущества участка:</h5>
+									<div class="chips">
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">У воды</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item--more">
+											<span class="text-T2">...</span>
+										</div>
+									</div>
+								</div>
+								<div class="plot__btns">
+									<a href="#genplan" class="btn-primary btn-genplan"
+									   data-villageId="94fe06db-0048-4c2b-8d32-2659e68f5bbf"
+									   data-landId="14563">Посмотреть</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-scrollbar"></div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-plots">
+			<div class="wrapper">
+				<div class="section-plots__header">
+					<h2 class="text-H2 section__title">Вам подойдут эти посёлки</h2>
+					<div class="swiper-button-next btn btn-round">
+						<i class="icon icon-arrow-right-1"></i>
+					</div>
+					<div class="swiper-button-prev btn btn-round">
+						<i class="icon icon-arrow-left"></i>
+					</div>
+				</div>
+				<div class="section-plots__items js-hover__items swiper plots__slider">
+					<div class="swiper-wrapper">
+						<div class="section-plots__items__item plot js-hover__item swiper-slide">
+							<div class="section-plots__items__item__pic">
+								<span class="tag--green">В продаже 500 участков</span>
+								<video width="100%" height="100%" autoplay loop muted class="">
+									<source src="img/video.MP4" type="video/mp4">
+								</video>
+							</div>
+							<div class="section-plots__items__item__text plot__text">
+								<div class="plot__title">
+									<h4 class="text-H4">Калинка-Малинка</h4>
+									<div class="plot__title__size">
+										<span class="text-T1">от 66 до 22 соток</span>
+									</div>
+								</div>
+								<div class="plot__communications">
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">Газ</span>
+									</div>
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">вода</span>
+									</div>
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">электричество</span>
+									</div>
+								</div>
+								<div class="plot__total">
+									<i class="icon icon-house-2"></i>
+									<span class="text-T1"><span class="text-T1B">1 200</span> участков</span>
+								</div>
+								<div class="plot__prices">
+									<i class="icon icon-wallet-2"></i>
+									<span class="text-T1">Средняя цена <span class="text-T1B">638 600 руб</span> за участок</span>
+								</div>
+								<div class="plot__advantages">
+									<h5 class="text-T1">Преимущества участка:</h5>
+									<div class="chips">
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">У воды</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item--more">
+											<span class="text-T2">...</span>
+										</div>
+									</div>
+								</div>
+								<div class="plot__btns">
+									<a href="#genplan" class="btn-secondary btn-genplan"
+									   data-villageId="94fe06db-0048-4c2b-8d32-2659e68f5bbf"
+									   data-landId="14563">Подробнее</a>
+									<button class="btn-primary">Оставить заявку</button>
+								</div>
+							</div>
+						</div>
+						<div class="section-plots__items__item plot js-hover__item swiper-slide">
+							<div class="section-plots__items__item__pic">
+								<span class="tag--green">В продаже 500 участков</span>
+								<video width="100%" height="100%" autoplay loop muted class="">
+									<source src="img/video.MP4" type="video/mp4">
+								</video>
+							</div>
+							<div class="section-plots__items__item__text plot__text">
+								<div class="plot__title">
+									<h4 class="text-H4">Калинка-Малинка</h4>
+									<div class="plot__title__size">
+										<span class="text-T1">от 66 до 22 соток</span>
+									</div>
+								</div>
+								<div class="plot__communications">
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">Газ</span>
+									</div>
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">вода</span>
+									</div>
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">электричество</span>
+									</div>
+								</div>
+								<div class="plot__total">
+									<i class="icon icon-house-2"></i>
+									<span class="text-T1"><span class="text-T1B">1 200</span> участков</span>
+								</div>
+								<div class="plot__prices">
+									<i class="icon icon-wallet-2"></i>
+									<span class="text-T1">Средняя цена <span class="text-T1B">638 600 руб</span> за участок</span>
+								</div>
+								<div class="plot__advantages">
+									<h5 class="text-T1">Преимущества участка:</h5>
+									<div class="chips">
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">У воды</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item--more">
+											<span class="text-T2">...</span>
+										</div>
+									</div>
+								</div>
+								<div class="plot__btns">
+									<a href="#genplan" class="btn-secondary btn-genplan"
+									   data-villageId="94fe06db-0048-4c2b-8d32-2659e68f5bbf"
+									   data-landId="14563">Подробнее</a>
+									<button class="btn-primary">Оставить заявку</button>
+								</div>
+							</div>
+						</div>
+						<div class="section-plots__items__item plot js-hover__item swiper-slide">
+							<div class="section-plots__items__item__pic">
+								<span class="tag--green">В продаже 500 участков</span>
+								<video width="100%" height="100%" autoplay loop muted class="">
+									<source src="img/video.MP4" type="video/mp4">
+								</video>
+							</div>
+							<div class="section-plots__items__item__text plot__text">
+								<div class="plot__title">
+									<h4 class="text-H4">Калинка-Малинка</h4>
+									<div class="plot__title__size">
+										<span class="text-T1">от 66 до 22 соток</span>
+									</div>
+								</div>
+								<div class="plot__communications">
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">Газ</span>
+									</div>
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">вода</span>
+									</div>
+									<div class="plot__communications__item">
+										<svg width="16" height="16">
+											<use xlink:href="img/sprite.svg#gas"></use>
+										</svg>
+										<span class="text-T1">электричество</span>
+									</div>
+								</div>
+								<div class="plot__total">
+									<i class="icon icon-house-2"></i>
+									<span class="text-T1"><span class="text-T1B">1 200</span> участков</span>
+								</div>
+								<div class="plot__prices">
+									<i class="icon icon-wallet-2"></i>
+									<span class="text-T1">Средняя цена <span class="text-T1B">638 600 руб</span> за участок</span>
+								</div>
+								<div class="plot__advantages">
+									<h5 class="text-T1">Преимущества участка:</h5>
+									<div class="chips">
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">У воды</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item">
+											<picture>
+												<img src="img/tree.svg" alt="plot" width="16" height="16">
+											</picture>
+											<span class="text-T2">Рядом лес</span>
+										</div>
+										<div class="chips__item--more">
+											<span class="text-T2">...</span>
+										</div>
+									</div>
+								</div>
+								<div class="plot__btns">
+									<a href="#genplan" class="btn-secondary btn-genplan"
+									   data-villageId="94fe06db-0048-4c2b-8d32-2659e68f5bbf"
+									   data-landId="14563">Подробнее</a>
+									<button class="btn-primary">Оставить заявку</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-scrollbar"></div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-houses">
+			<div class="wrapper">
+				<h2 class="h-1 section__title">Подходящие Дома</h2>
+				<div class="section-houses__items">
+					<div class="section-houses__items__item card-house">
+						<picture class="card-house__pic">
+							<img src="img/team.jpg" alt="plot">
+						</picture>
+						<div class="card-house__content">
+							<div class="card-house__content__title">
+								<h4 class="h-4">Дом из кирпича (ИР-14)</h4>
+								<div class="card-house__content__size">
+									<span class="text-T1">120 м²</span>
+								</div>
+							</div>
+							<div class="card-house__content__desc">
+								<div class="card-house__content__desc__item">
+									<img src="img/house_1.svg" alt="icon" width="16" height="16">
+									<span class="b-1">1 этаж</span>
+								</div>
+								<div class="card-house__content__desc__item">
+									<img src="img/house_2.svg" alt="icon" width="16" height="16">
+									<span class="b-1">3 комнаты</span>
+								</div>
+								<div class="card-house__content__desc__item">
+									<img src="img/house_3.svg" alt="icon" width="16" height="16">
+									<span class="b-1">сибит</span>
+								</div>
+								<div class="card-house__content__desc__item">
+									<img src="img/house_4.svg" alt="icon" width="16" height="16">
+									<span class="b-1">1 санузел</span>
+								</div>
+							</div>
+							<div class="card-house__content__price">
+								<span class="text-H3">400 000 <span class="text-T1">руб</span></span>
+							</div>
+							<p class="text-T2 card-house__content__price__desc">Ознакомьтесь с планировкой дома в презентации
+								проекта:</p>
+							<button class="btn-primary">Получить презентацию</button>
+						</div>
+					</div>
+					<div class="section-houses__items__item card-house">
+						<picture class="card-house__pic">
+							<img src="img/team.jpg" alt="plot">
+						</picture>
+						<div class="card-house__content">
+							<div class="card-house__content__title">
+								<h4 class="h-4">Дом из кирпича (ИР-14)</h4>
+								<div class="card-house__content__size">
+									<span class="text-T1">120 м²</span>
+								</div>
+							</div>
+							<div class="card-house__content__desc">
+								<div class="card-house__content__desc__item">
+									<img src="img/house_1.svg" alt="icon" width="16" height="16">
+									<span class="b-1">1 этаж</span>
+								</div>
+								<div class="card-house__content__desc__item">
+									<img src="img/house_2.svg" alt="icon" width="16" height="16">
+									<span class="b-1">3 комнаты</span>
+								</div>
+								<div class="card-house__content__desc__item">
+									<img src="img/house_3.svg" alt="icon" width="16" height="16">
+									<span class="b-1">сибит</span>
+								</div>
+								<div class="card-house__content__desc__item">
+									<img src="img/house_4.svg" alt="icon" width="16" height="16">
+									<span class="b-1">1 санузел</span>
+								</div>
+							</div>
+							<div class="card-house__content__price">
+								<span class="text-H3">400 000 <span class="text-T1">руб</span></span>
+							</div>
+							<p class="text-T2 card-house__content__price__desc">Ознакомьтесь с планировкой дома в презентации
+								проекта:</p>
+							<button class="btn-primary">Получить презентацию</button>
+						</div>
+					</div>
+					<div class="section-houses__items__item card-house">
+						<picture class="card-house__pic">
+							<img src="img/team.jpg" alt="plot">
+						</picture>
+						<div class="card-house__content">
+							<div class="card-house__content__title">
+								<h4 class="h-4">Дом из кирпича (ИР-14)</h4>
+								<div class="card-house__content__size">
+									<span class="text-T1">120 м²</span>
+								</div>
+							</div>
+							<div class="card-house__content__desc">
+								<div class="card-house__content__desc__item">
+									<img src="img/house_1.svg" alt="icon" width="16" height="16">
+									<span class="b-1">1 этаж</span>
+								</div>
+								<div class="card-house__content__desc__item">
+									<img src="img/house_2.svg" alt="icon" width="16" height="16">
+									<span class="b-1">3 комнаты</span>
+								</div>
+								<div class="card-house__content__desc__item">
+									<img src="img/house_3.svg" alt="icon" width="16" height="16">
+									<span class="b-1">сибит</span>
+								</div>
+								<div class="card-house__content__desc__item">
+									<img src="img/house_4.svg" alt="icon" width="16" height="16">
+									<span class="b-1">1 санузел</span>
+								</div>
+							</div>
+							<div class="card-house__content__price">
+								<span class="text-H3">400 000 <span class="text-T1">руб</span></span>
+							</div>
+							<p class="text-T2 card-house__content__price__desc">Ознакомьтесь с планировкой дома в презентации
+								проекта:</p>
+							<button class="btn-primary">Получить презентацию</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-genplan" id="genplan">
+			<div class="wrapper">
+				<h2 class="section__title text-H2">Генплан</h2>
+				<div class="section-genplan__inner">
+					<iframe src="https://lk.stage.lokeodata.ru/genplan-iframe?lat-long=54.56980235977613,37.44510671570626&amp;zoom=12&amp;village-ids=7910df91-7459-4b3e-9be8-05a033402198,4b9733f7-ae5f-498a-a057-540fdb1dc94e,548d5b7a-cdff-474c-8f0c-8ce370dcffe4,94fe06db-0048-4c2b-8d32-2659e68f5bbf" frameborder="0" width="100%" height="100%" class="section-genplan__iframe stub-picture"></iframe>
+					<div class="section-genplan__inner__stub">
+						<video width="100%" height="100%" autoplay="" loop="" muted="" playsinline="" poster="https://land.m2o2.ru/wp-content/uploads/2024/03/map.png" class="lazy-video">
+							<source data-src="https://land.m2o2.ru/wp-content/uploads/2024/03/ot-serpuhova-nov-szhatie.mp4" type="video/mp4" src="https://land.m2o2.ru/wp-content/uploads/2024/03/ot-serpuhova-nov-szhatie.mp4">
+						</video>
+						<button class="btn btn-orange btn-genplanMob">
+							<i class="icon icon-location"></i>
+							<span>Открыть генплан</span>
+						</button>
+					</div>
+				</div>
+				<button class="btn__genplan-form">genplan form</button>
+			</div>
+		</section>
+		<section id="gallery" class="slider-after section section-gallery">
+			<div class="wrapper">
+				<h2 class="section__title text-H2">Галерея</h2>
+				<div class="swiper-container slider-two">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="chips__item">
+								<i class="icon icon-house-2"></i>
+								<span class="text-T2">КП «Гельвеция»</span>
+							</div>
+							<picture>
+								<!--                            <source srcset="img/village-slide-1.webp" type="image/webp">-->
+								<img src="img/faq-slide-1.jpg" alt="slide" width="1344" height="740">
+							</picture>
+							<div class="swiper-slide__desc text-T1">
+								Рядом с участком расположено небольшое живописное озеро
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="chips__item">
+								<i class="icon icon-house-2"></i>
+								<span class="text-T2">КП «Гельвеция»</span>
+							</div>
+							<picture>
+								<!--                            <source srcset="img/village-slide-1.webp" type="image/webp">-->
+								<img src="img/faq-slide-1.jpg" alt="slide" width="1344" height="740">
+							</picture>
+							<div class="swiper-slide__desc text-T1">
+								Рядом с участком расположено небольшое живописное озеро
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="chips__item">
+								<i class="icon icon-house-2"></i>
+								<span class="text-T2">КП «Гельвеция»</span>
+							</div>
+							<picture>
+								<!--                            <source srcset="img/village-slide-1.webp" type="image/webp">-->
+								<img src="img/faq-slide-1.jpg" alt="slide" width="1344" height="740">
+							</picture>
+							<div class="swiper-slide__desc text-T1">
+								Рядом с участком расположено небольшое живописное озеро
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="swiper-button-next btn btn-round-white">
+					<i class="icon icon-arrow-right-1"></i>
+				</div>
+				<div class="swiper-button-prev btn btn-round-white">
+					<i class="icon icon-arrow-left"></i>
+				</div>
+			</div>
+		</section>
+		<section class="section section-callback">
+			<div class="section-callback__images">
+				<img src="img/img-1.png" width="91" height="100" alt="pic">
+				<img src="img/img-2.png" width="106" height="39" alt="pic">
+				<img src="img/img-3.png" width="191" height="101" alt="pic">
+			</div>
+			<div class="wrapper">
+				<div class="section-callback__items">
+					<div class="section-callback__items__text">
+						<div class="section-callback__icon">
+							<svg width="32" height="32">
+								<use xlink:href="img/sprite.svg#messages"></use>
+							</svg>
+						</div>
+						<div>
+							<h2 class="text-H2">Заполните форму заявки</h2>
+							<p class="text-T1">и мы свяжемся с вами в ближайшее время.</p>
+						</div>
+					</div>
+					<button class="btn-secondary js-modal" data-modal="#modal_1">Оставить заявку</button>
+				</div>
+			</div>
+		</section>
+		<section id="environment" class="section section-environment">
+			<div class="wrapper">
+				<h2 class="text-H2 section__title">Удобное окружение</h2>
+				<div class="swiper-container slider-two">
+					<div class="swiper-wrapper">
+						<div class="inner swiper-slide">
+							<div class="section-environment__items">
+								<div class="section-environment__items__item section-environment__items__item-pic">
+									<picture>
+										<source srcset="img/village-slide-2.webp" type="image/webp">
+										<img src="img/village-slide-2.png" alt="slide" width="672" height="640">
+									</picture>
+								</div>
+								<div class="section-environment__items__item section-environment__items__item-content">
+									<h4 class="text-H3">ТЦ в заокске</h4>
+									<div class="content-description">
+										<div class="content-description__item">
+											<i class="icon icon-buildings-2"></i>
+											<p>
+												<span class="text-T1B">Заокский район, Тульская область</span>
+												<span class="text-T2">(110 км от МКАД)</span>
+											</p>
+										</div>
+									</div>
+									<div class="more">
+										<p class="text-T1 grey more__content">Погрузитесь в мир шопинга в Заокском районе! Наш
+											Торговый Центр –
+											ваш
+											незаменимый партнер для стильных покупок и приятного времяпрепровождения.
+											Широкий ассортимент магазинов, уютные кафе и разнообразные развлечения создадут
+											неповторимую атмосферу комфорта и удовольствия. Заокский ТЦ – ваш новый
+											шопинг-пункт назначения!</p>
+										<div class="more__link">
+											<span class="text-T1 more__link__hide">Показать ещё</span>
+											<span class="text-T1 more__link__visible">Скрыть</span>
+											<i class="icon icon-arrow-down-1"></i>
+										</div>
+										<div class="content-description__footer">
+											<a href="#" class="btn-primary b-2" target="_blank">Посмотреть на карте</a>
+											<p class="text-T2">* оставьте заявку и получите детальный расчёт и информацию по
+												земле
+												.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="inner swiper-slide">
+							<div class="section-environment__items">
+								<div class="section-environment__items__item section-environment__items__item-pic">
+									<picture>
+										<source srcset="img/village-slide-2.webp" type="image/webp">
+										<img src="img/village-slide-2.png" alt="slide" width="672" height="640">
+									</picture>
+								</div>
+								<div class="section-environment__items__item section-environment__items__item-content">
+									<h4 class="text-H3">ТЦ в заокске</h4>
+									<div class="content-description">
+										<div class="content-description__item">
+											<i class="icon icon-buildings-2"></i>
+											<p>
+												<span class="text-T1B">Заокский район, Тульская область</span>
+												<span class="text-T2">(110 км от МКАД)</span>
+											</p>
+										</div>
+									</div>
+									<div class="more">
+										<p class="text-T1 grey more__content">Погрузитесь в мир шопинга в Заокском районе! Наш
+											Торговый Центр –
+											ваш
+											незаменимый партнер для стильных покупок и приятного времяпрепровождения.
+											Широкий ассортимент магазинов, уютные кафе и разнообразные развлечения создадут
+											неповторимую атмосферу комфорта и удовольствия. Заокский ТЦ – ваш новый
+											шопинг-пункт назначения!</p>
+										<div class="more__link">
+											<span class="text-T1 more__link__hide">Показать ещё</span>
+											<span class="text-T1 more__link__visible">Скрыть</span>
+											<i class="icon icon-arrow-down-1"></i>
+										</div>
+										<div class="content-description__footer">
+											<a href="#" class="btn-primary b-2" target="_blank">Посмотреть на карте</a>
+											<p class="text-T2">* оставьте заявку и получите детальный расчёт и информацию по
+												земле
+												.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="swiper-button-prev btn btn-round-white">
+					<i class="icon icon-arrow-left"></i>
+				</div>
+				<div class="swiper-button-next btn btn-round-white">
+					<i class="icon icon-arrow-right-1"></i>
+				</div>
+			</div>
+		</section>
+		<section class="section section-mortgage">
+			<div class="wrapper">
+				<h2 class="text-H2 section__title">льготная Ипотека от 5%</h2>
+				<div class="banks">
+					<img src="img/rosbank.svg" alt="icon" width="132" height="40">
+					<img src="img/vtb.svg" alt="icon" width="76" height="40">
+					<img src="img/sber.svg" alt="icon" width="200" height="40">
+					<img src="img/rfbank.svg" alt="icon" width="88" height="40">
+					<img src="img/alfabank.svg" alt="icon" width="144" height="40">
+				</div>
+				<div class="inner">
+					<div class="section-mortgage__items">
+						<div class="section-mortgage__items__item section-mortgage__items__item-pic">
+							<picture class="stub-picture">
+								<img src="img/team.jpg" alt="plot" width="1344" height="740">
+							</picture>
+							<div class="section-mortgage__icon">
+								<img src="img/ipo-icon.svg" alt="icon" width="48" height="48">
+							</div>
+						</div>
+						<div class="section-mortgage__items__item section-mortgage__items__item-content">
+							<h2 class="text-H3 section__subtitle">всю рутину возьмем на себя</h2>
+							<h3 class="text-T1 section__desc">У нас есть свой ипотечный менеджер, подготовим документы,
+								сориентируем по условиям и подадим заявку в банк.</h3>
+							<ul class="accordion">
+								<li class="accordion__item">
+									<button class="accordion__item__btn" type="button">
+										<span class="text-T1B">Ипотека для IT</span>
+										<i class="icon icon-arrow-down-1"></i>
+									</button>
+									<div class="accordion__item__content">
+										<div class="accordion__item__content__item">
+											<span class="text-T2">ставка</span>
+											<span class="text-T2">от 5%</span>
+										</div>
+										<div class="accordion__item__content__item">
+											<span class="text-T2">первый взнос</span>
+											<span class="text-T2">от 20,01%</span>
+										</div>
+									</div>
+								</li>
+								<li class="accordion__item">
+									<button class="accordion__item__btn" type="button">
+										<span class="text-T1B">Ипотека для IT</span>
+										<i class="icon icon-arrow-down-1"></i>
+									</button>
+									<div class="accordion__item__content">
+										<div class="accordion__item__content__item">
+											<span class="text-T2">ставка</span>
+											<span class="text-T2">от 5%</span>
+										</div>
+									</div>
+								</li>
+								<li class="accordion__item">
+									<button class="accordion__item__btn" type="button">
+										<span class="text-T1B">Ипотека для IT</span>
+										<i class="icon icon-arrow-down-1"></i>
+									</button>
+									<div class="accordion__item__content">
+										<div class="accordion__item__content__item">
+											<span class="text-T2">ставка</span>
+											<span class="text-T2">от 5%</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<button class="btn-primary">уточнить условия</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-environment">
+			<div class="wrapper">
+				<h2 class="text-H2 section__title">Используйте землю для разных целей</h2>
+				<div class="swiper-container slider-two">
+					<div class="swiper-wrapper">
+						<div class="inner swiper-slide">
+							<div class="section-environment__items">
+								<div class="section-environment__items__item section-environment__items__item-pic">
+									<picture>
+										<source srcset="img/village-slide-2.webp" type="image/webp">
+										<img src="img/village-slide-2.png" alt="slide" width="672" height="640">
+									</picture>
+								</div>
+								<div class="section-environment__items__item section-environment__items__item-content">
+									<h4 class="text-H3">Сыроварня</h4>
+									<div class="more">
+										<p class="text-T1 grey more__content">Постройте свою сыроварню и станьте поставщиком сыров. По
+											данным экологов Тульского областного отделения "Зеленый патруль", Заокский район является самым
+											чистым районом Тульской области.</p>
+										<div class="more__link">
+											<span class="text-T1 more__link__hide">Показать ещё</span>
+											<span class="text-T1 more__link__visible">Скрыть</span>
+											<i class="icon icon-arrow-down-1"></i>
+										</div>
+										<div class="content-description__footer">
+											<a href="#" class="btn-primary b-2" target="_blank">Посмотреть на карте</a>
+											<p class="text-T2">* оставьте заявку и получите детальный расчёт и информацию по
+												земле
+												.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="inner swiper-slide">
+							<div class="section-environment__items">
+								<div class="section-environment__items__item section-environment__items__item-pic">
+									<picture>
+										<source srcset="img/village-slide-2.webp" type="image/webp">
+										<img src="img/village-slide-2.png" alt="slide" width="672" height="640">
+									</picture>
+								</div>
+								<div class="section-environment__items__item section-environment__items__item-content">
+									<h4 class="text-H3">ТЦ в заокске</h4>
+									<div class="content-description">
+										<div class="content-description__item">
+											<i class="icon icon-buildings-2"></i>
+											<p>
+												<span class="text-T1B">Заокский район, Тульская область</span>
+												<span class="text-T2">(110 км от МКАД)</span>
+											</p>
+										</div>
+									</div>
+									<div class="more">
+										<p class="text-T1 grey more__content">Погрузитесь в мир шопинга в Заокском районе! Наш
+											Торговый Центр –
+											ваш
+											незаменимый партнер для стильных покупок и приятного времяпрепровождения.
+											Широкий ассортимент магазинов, уютные кафе и разнообразные развлечения создадут
+											неповторимую атмосферу комфорта и удовольствия. Заокский ТЦ – ваш новый
+											шопинг-пункт назначения!</p>
+										<div class="more__link">
+											<span class="text-T1 more__link__hide">Показать ещё</span>
+											<span class="text-T1 more__link__visible">Скрыть</span>
+											<i class="icon icon-arrow-down-1"></i>
+										</div>
+										<div class="content-description__footer">
+											<a href="#" class="btn-primary b-2" target="_blank">Посмотреть на карте</a>
+											<p class="text-T2">* оставьте заявку и получите детальный расчёт и информацию по
+												земле
+												.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="swiper-button-prev btn btn-round-white">
+					<i class="icon icon-arrow-left"></i>
+				</div>
+				<div class="swiper-button-next btn btn-round-white">
+					<i class="icon icon-arrow-right-1"></i>
+				</div>
+			</div>
+		</section>
+		<section class="section section-innovative">
+			<div class="wrapper">
+				<h2 class="section__title text-H2">Инновационные сервисы</h2>
+				<div class="section-innovative__items">
+					<div class="inner">
+						<div class="section-innovative__items__item">
+							<div class="section-innovative__items__item__pic">
+								<picture class="stub-picture">
+									<img src="img/innovative-image-1.png" alt="innovative" width="592" height="560">
+								</picture>
+							</div>
+							<div class="section-innovative__items__item__text innovative-text">
+								<h3 class="text-H3 innovative-text__title">Личный кабинет собственника</h3>
+								<div class="adve">
+									<div class="adve__item">
+										<i class="icon icon-empty-wallet"></i>
+										<h4 class="adve__item__title text-T1B">Удобная оплата, детали лицевого счёта
+											и автоплатежи</h4>
+									</div>
+									<div class="adve__item">
+										<i class="icon icon-ticket"></i>
+										<h4 class="adve__item__title text-T1B">Заказывайте пропуска самостоятельно</h4>
+									</div>
+									<div class="adve__item">
+										<i class="icon icon-message-text"></i>
+										<h4 class="adve__item__title text-T1B">Отправляйте обращения в УК</h4>
+									</div>
+								</div>
+								<div class="apps">
+									<a href="#" class="apps__item">
+										<svg>
+											<use xlink:href="img/sprite.svg#app"></use>
+										</svg>
+									</a>
+									<a href="#" class="apps__item">
+										<svg>
+											<use xlink:href="img/sprite.svg#ru-store"></use>
+										</svg>
+									</a>
+									<a href="#" class="apps__item">
+										<svg>
+											<use xlink:href="img/sprite.svg#google"></use>
+										</svg>
+									</a>
+								</div>
+								<p class="text-T3">* за регистрацией обратитесь к менеджеру.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-innovative">
+			<div class="wrapper">
+				<h2 class="section__title text-H2">Инновационные сервисы</h2>
+				<div class="section-innovative__items">
+					<div class="inner">
+						<div class="section-innovative__items__item">
+							<div class="section-innovative__items__item__pic">
+								<button class="btn-secondary">
+									<i class="icon icon-video-circle"></i>
+									<span></span>
+								</button>
+								<picture class="stub-picture">
+									<img src="img/innovative-image-1.png" alt="innovative" width="592" height="560">
+								</picture>
+							</div>
+							<div class="section-innovative__items__item__text innovative-text">
+								<h3 class="text-H3 innovative-text__title">Умные КПП</h3>
+								<div class="adve">
+									<div class="adve__item">
+										<i class="icon icon-empty-wallet"></i>
+										<h4 class="adve__item__title text-T1B">Удобная оплата, детали лицевого счёта
+											и автоплатежи</h4>
+									</div>
+									<div class="adve__item">
+										<i class="icon icon-ticket"></i>
+										<h4 class="adve__item__title text-T1B">Заказывайте пропуска самостоятельно</h4>
+									</div>
+									<div class="adve__item">
+										<i class="icon icon-message-text"></i>
+										<h4 class="adve__item__title text-T1B">Отправляйте обращения в УК</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-team">
+			<div class="wrapper">
+				<h2 class="text-H2 section__title">УК «Инвест Сервис»</h2>
+				<h3 class="text-T1 section__subtitle">Управляющая компания с десятилетним опытом обеспечит ваше пребывание на
+					территории
+					посёлка
+					максимальным комфортом</h3>
+				<div class="adve">
+					<div class="adve__item">
+						<div class="adve__item__pic">
+							<i class="icon icon-broom"></i>
+						</div>
+						<h4 class="adve__item__title text-T1B">Чистка снега и
+							покос травы</h4>
+					</div>
+					<div class="adve__item">
+						<div class="adve__item__pic">
+							<i class="icon icon-user-octagon"></i>
+						</div>
+						<h4 class="adve__item__title text-T1B">Охрана</h4>
+					</div>
+					<div class="adve__item">
+						<div class="adve__item__pic">
+							<i class="icon icon-trash"></i>
+						</div>
+						<h4 class="adve__item__title text-T1B">Вывоз мусора</h4>
+					</div>
+					<div class="adve__item">
+						<div class="adve__item__pic">
+							<i class="icon icon-driving"></i>
+						</div>
+						<h4 class="adve__item__title text-T1B">ремонт дорог</h4>
+					</div>
+				</div>
+				<div class="section-team__image">
+					<picture>
+						<source srcset="img/team.webp" type="image/webp">
+						<img src="img/team.jpg" alt="team" width="1344" height="740">
+					</picture>
+				</div>
+			</div>
+		</section>
+		<section class="section section-vr">
+			<div class="wrapper">
+				<h2 class="text-H2 section__title">Осматривайте участки
+					в виртуальной реальности</h2>
+				<div class="adve">
+					<div class="adve__item">
+						<div class="adve__item__pic">
+							<i class="icon icon-house"></i>
+						</div>
+						<h4 class="adve__item__title text-T1B">Постройте дом
+							вместе с ребёнком</h4>
+					</div>
+					<div class="adve__item">
+						<div class="adve__item__pic">
+							<i class="icon icon-building"></i>
+						</div>
+						<h4 class="adve__item__title text-T1B">Посетите VR шоурум
+							из 12-ти домов</h4>
+					</div>
+					<div class="adve__item">
+						<div class="adve__item__pic">
+							<i class="icon icon-profile-2user"></i>
+						</div>
+						<h4 class="adve__item__title text-T1B">Посетите VR Мир M2o2
+							сразу вдвоём</h4>
+					</div>
+				</div>
+				<div class="section-vr__btns">
+					<a href="#" class="btn-primary">Попробовать</a>
+				</div>
+				<div class="section-vr__image">
+					<button href="#" class="btn-secondary">
+						<i class="icon icon-video-circle"></i>
+						<span>смотреть видео</span>
+					</button>
+					<video width="100%" height="100%" playsinline autoplay loop muted>
+						<source src="img/map.webm" type="video/webm">
+						<source src="img/map.MP4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</section>
+		<section class="section section-infrastructure">
+			<div class="wrapper">
+				<h2 class="text-H2 section__title">Инфраструктура</h2>
+				<div class="section-infrastructure__items">
+					<div class="section-infrastructure__items__item">
+						<div class="section-infrastructure__items__item__pic">
+							<picture class="stub-picture">
+								<!--                            <source srcset="img/plot-1.webp" type="image/webp">-->
+								<img src="img/team.jpg" alt="plot">
+							</picture>
+						</div>
+						<div class="section-infrastructure__items__item__text">
+							<h4 class="text-H4">Детские площадки</h4>
+							<p class="text-T1">Описание</p>
+						</div>
+					</div>
+					<div class="section-infrastructure__items__item">
+						<div class="section-infrastructure__items__item__pic">
+							<picture class="stub-picture">
+								<!--                            <source srcset="img/plot-1.webp" type="image/webp">-->
+								<img src="img/team.jpg" alt="plot">
+							</picture>
+						</div>
+						<div class="section-infrastructure__items__item__text">
+							<h4 class="text-H4">Детские площадки</h4>
+							<p class="text-T1">Описание</p>
+						</div>
+					</div>
+					<div class="section-infrastructure__items__item">
+						<div class="section-infrastructure__items__item__pic">
+							<picture class="stub-picture">
+								<!--                            <source srcset="img/plot-1.webp" type="image/webp">-->
+								<img src="img/team.jpg" alt="plot">
+							</picture>
+						</div>
+						<div class="section-infrastructure__items__item__text">
+							<h4 class="text-H4">Детские площадки</h4>
+							<p class="text-T1">Описание</p>
+						</div>
+					</div>
+					<div class="section-infrastructure__items__item">
+						<div class="section-infrastructure__items__item__pic">
+							<picture class="stub-picture">
+								<!--                            <source srcset="img/plot-1.webp" type="image/webp">-->
+								<img src="img/team.jpg" alt="plot">
+							</picture>
+						</div>
+						<div class="section-infrastructure__items__item__text">
+							<h4 class="text-H4">Детские площадки</h4>
+							<p class="text-T1">Описание</p>
+						</div>
+					</div>
+					<div class="section-infrastructure__items__item">
+						<div class="section-infrastructure__items__item__pic">
+							<picture class="stub-picture">
+								<!--                            <source srcset="img/plot-1.webp" type="image/webp">-->
+								<img src="img/team.jpg" alt="plot">
+							</picture>
+						</div>
+						<div class="section-infrastructure__items__item__text">
+							<h4 class="text-H4">Детские площадки</h4>
+							<p class="text-T1">Описание</p>
+						</div>
+					</div>
+					<div class="section-infrastructure__items__item">
+						<div class="section-infrastructure__items__item__pic">
+							<picture class="stub-picture">
+								<!--                            <source srcset="img/plot-1.webp" type="image/webp">-->
+								<img src="img/team.jpg" alt="plot">
+							</picture>
+						</div>
+						<div class="section-infrastructure__items__item__text">
+							<h4 class="text-H4">Детские площадки</h4>
+							<p class="text-T1">Описание</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-text">
+			<div class="wrapper">
+				<h2 class="text-H2 section__title">Жизнь в гармонии с природой</h2>
+				<h3 class="text-T1 section__subtitle">Предлагаемый земельный участок находится в живописном районе, подходящем
+					для развития бизнес-инфраструктуры, такой как магазины, поля и фабрики. Участок расположен вблизи
+					транспортных магистралей, что обеспечивает легкий доступ к основным дорожным сетям и позволяет удобное
+					перемещение товаров и сотрудников.</h3>
+				<button class="btn-primary">Хочу здесь жить</button>
+			</div>
+			<div class="section-text__images">
+				<img src="img/img-1.png" width="91" height="100" alt="pic">
+				<img src="img/img-2.png" width="106" height="39" alt="pic">
+				<img src="img/img-3.png" width="191" height="101" alt="pic">
+			</div>
+		</section>
+		<section class="section section-loc">
+			<div class="wrapper">
+				<div class="section-loc__text">
+					<h2 class="text-H2 section__title">Как добраться</h2>
+					<h3 class="text-T1B section__subtitle">Поселок M2o2 расположен всего в 120 км. от МКАД, по трассе M2 в
+						экологически чистом районе
+						Тульской области</h3>
+				</div>
+				<a href="img/map-black.svg" class="section-loc__img section-loc__img-black" data-fancybox="gallery-1">
+					<img src="img/map-black.svg" alt="map" width="1248" height="896">
+				</a>
+				<a href="img/map-white.svg" class="section-loc__img section-loc__img-white" data-fancybox="gallery-1">
+					<img src="img/map-white.svg" alt="map" width="1248" height="896">
+				</a>
+				<div class="section-loc__footer">
+					<svg width="24" height="24">
+						<use xlink:href="img/sprite.svg#pressed"></use>
+					</svg>
+					<p class="text-T2">нажмите на карту, чтобы разглядеть её получше</p>
+				</div>
+			</div>
+		</section>
+		<section class="section section-yandex-map">
+			<div class="wrapper">
+				<h2 class="text-H2 section__title">Как добраться</h2>
+				<h3 class="text-T1 section__subtitle">Поселок M2o2 расположен всего в 120 км. от МКАД, по трассе M2 в экологически
+					чистом районе Тульской области</h3>
+				<div class="inner">
+					<script type="text/javascript" charset="utf-8" async
+					        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af4c057a451adbf65c52dfd0459159b6613296829ea20075544a8f6f506484131&amp;width=1280&amp;height=716&amp;lang=ru_RU&amp;scroll=true"></script>
+				</div>
+			</div>
+		</section>
+		<section class="section section-simile">
+			<div class="wrapper">
+				<h2 class="text-H2 section__title">Так ли важна дальность?</h2>
+				<h3 class="text-T1 section__subtitle">Сравните параметры участков в посёлках на расстоянии
+					80 и 120 км. Так ли важны эти 30 км.?</h3>
+				<div class="inner">
+					<table class="section-simile__table">
+						<thead>
+						<tr>
+							<th></th>
+							<th>
+								<h4 class="text-H4">КП «ЗемАктив»</h4>
+								<a href="#" target="_blank" class="link-green--underline">
+									<svg width="16" height="16" viewBox="0 0 16 16">
+										<use xlink:href="img/sprite.svg#export"></use>
+									</svg>
+									<span>веб-сайт</span>
+								</a>
+							</th>
+							<th>
+								<h4 class="text-H4">КП «М2о2»</h4>
+							</th>
+						</tr>
+						</thead>
+						<tfoot>
+						<tr>
+							<td class="text-T1B">Итого</td>
+							<td>
+                            <span class="text-H3">
+                                <span>3 000 000</span> руб.
+                            </span>
+							</td>
+							<td>
+								<span class="text-H2"><span>800 000</span> руб.</span>
+								<span class="btn-primary">
+                                <span class="t-1">экономия в </span>
+                                <span class="t-1-bold">2 300 00 руб.</span>
+                            </span>
+							</td>
+						</tr>
+						</tfoot>
+						<tbody>
+						<tr>
+							<td class="text-T1B">ДАЛЬНОСТЬ</td>
+							<td class="text-T1">80 км.</td>
+							<td class="text-T1">120 км.</td>
+						</tr>
+						<tr>
+							<td class="text-T1B">Время на машине</td>
+							<td class="text-T1">45 мин. от м. Амино</td>
+							<td class="text-T1">70 мин. от м. Амино</td>
+						</tr>
+						<tr>
+							<td class="text-T1B">Цена за сотку</td>
+							<td class="text-T1">230 000 руб.</td>
+							<td class="text-T1">30 000 руб.</td>
+						</tr>
+						<tr>
+							<td class="text-T1B">Участок в 10 сот.</td>
+							<td class="text-T1">2 300 000 руб.</td>
+							<td class="text-T1">300 000 руб.</td>
+						</tr>
+						<tr>
+							<td class="text-T1B">Электричество</td>
+							<td class="text-T1">250 000 руб.</td>
+							<td class="text-T1">150 000 руб.</td>
+						</tr>
+						<tr>
+							<td class="text-T1B">Вода</td>
+							<td class="text-T1">250 000 руб.</td>
+							<td class="text-T1">115 000 руб.</td>
+						</tr>
+						<tr>
+							<td class="text-T1B">Газ</td>
+							<td class="text-T1y">250 000 руб.</td>
+							<td class="text-T1">70 000 руб.
+						</tr>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+		<section class="section section-faq">
+			<div class="section-faq__images">
+				<picture class="section-faq__images__img section-faq__images__img-1">
+					<source srcset="img/faq-slide-2.webp" type="image/webp">
+					<img src="img/faq-slide-2.jpg" alt="slide" width="640" height="640">
+				</picture>
+				<picture class="section-faq__images__img section-faq__images__img-2">
+					<source srcset="img/faq-slide-1.webp" type="image/webp">
+					<img src="img/faq-slide-1.jpg" alt="slide" width="640" height="640">
+				</picture>
+			</div>
+			<div class="section-faq__text">
+				<h2 class="text-H2 section__title">Есть вопросы?</h2>
+				<h3 class="text-T1 section__subtitle">оставьте свои контактные данные и мы свяжемся с вами
+					в ближайшее время</h3>
+				<button class="btn-primary">Оставить заявку</button>
+				<!--			<div class="lid">-->
+				<!--				<button class="btn btn-orange btn-lid btn-lid&#45;&#45;2">-->
+				<!--					<span class="b-2">Получить генплан с ценами</span>-->
+				<!--					<i class="icon icon-arrow-right-1"></i>-->
+				<!--				</button>-->
+				<!--				<p class="t-2">Заполните заявку, чтобы осмотреть посёлок в 3D</p>-->
+				<!--			</div>-->
+				<img src="img/bg-vr.svg" alt="vr" width="176" height="340" class="section-faq__text__bg">
+				<!--            <img src="img/bg-3d.svg" alt="vr" width="176" height="340" class="section-faq__text__bg">-->
+				<!--            <img src="img/bg-gp.png" alt="vr" width="456" height="330" class="section-faq__text__bg">-->
+			</div>
+		</section>
+		<section class="section section-faq section-house-1">
+			<div class="section-faq__images">
+				<picture class="section-faq__images__img section-faq__images__img-1">
+					<source srcset="img/faq-slide-2.webp" type="image/webp">
+					<img src="img/faq-slide-2.jpg" alt="slide" width="640" height="640">
+				</picture>
+				<picture class="section-faq__images__img section-faq__images__img-2">
+					<source srcset="img/faq-slide-1.webp" type="image/webp">
+					<img src="img/faq-slide-1.jpg" alt="slide" width="640" height="640">
+				</picture>
+			</div>
+			<div class="section-faq__text section-house-1__text">
+				<div class="section-house-1__text__icon">
+					<img src="img/icon-hand.svg" alt="icon" width="32" height="32">
+				</div>
+				<h3 class="text-T1B">спецпредложение</h3>
+				<h2 class="text-H3 section-house-1__text__title"><span class="text-H2">Дом </span>по проекту ИР-14, 120 м²
+					<br> <span class="text-H2 section-house-1__text__plus">+</span> <span class="text-H2">участок</span> 12
+					соток:</h2>
+				<p class="section-house-1__text__price"><span class="text-H1">1.6</span> <span class="h-2">млн руб</span></p>
+				<button class="btn btn-orange btn-lid btn-lid--2">
+					Узнать подробности
+				</button>
+			</div>
+		</section>
+		<section class="section section-house-1 section-house-2">
+			<div class="wrapper">
+				<div class="section-house-2__inner">
+					<div class="section-house-1__text section-house-2__text">
+						<div class="section-house-1__text__icon section-house-2__text__icon">
+							<img src="img/icon-hand.svg" alt="icon" width="32" height="32">
+						</div>
+						<h3 class="text-T1B">спецпредложение</h3>
+						<h2 class="text-H3 section-house-1__text__title"><span class="text-H2">Дом </span>по проекту ИР-14, 120 м²
+							<br> <span class="text-H2 section-house-1__text__plus">+</span> <span class="text-H2">участок</span> 12
+							соток:</h2>
+						<p class="section-house-1__text__price"><span class="text-H1">1.6</span> <span class="h-2">млн руб</span></p>
+						<button class="btn-primary">
+							Узнать подробности
+						</button>
+					</div>
+					<div class="section-house-2__bg">
+						<picture>
+							<img src="img/bg-huses.jpg" alt="bg">
+						</picture>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-style">
+			<div class="wrapper">
+				<div class="section-style__text">
+					<h2 class="text-H2 section__title">Архитектурный стиль<br>
+						в малоэтажном строительстве</h2>
+					<h3 class="text-T1 section__subtitle">В посёлках М2o2 мы развиваем подход архитектурного стиля в застройке
+						территории, что не специфично для России.</h3>
+				</div>
+				<div class="inner">
+					<div class="adve">
+						<div class="adve__item">
+							<div class="adve__item__pic">
+								<i class="icon icon-sun-fog"></i>
+							</div>
+							<h4 class="adve__item__title text-T1B">Тесная связь с природой</h4>
+						</div>
+						<div class="adve__item">
+							<div class="adve__item__pic">
+								<i class="icon icon-house-2"></i>
+							</div>
+							<h4 class="adve__item__title text-T1B">Нет недостроев</h4>
+						</div>
+						<div class="adve__item">
+							<div class="adve__item__pic">
+								<i class="icon icon-buildings-2"></i>
+							</div>
+							<h4 class="adve__item__title text-T1B">Нет Шанхая</h4>
+						</div>
+						<div class="adve__item">
+							<div class="adve__item__pic">
+								<i class="icon icon-building-3"></i>
+							</div>
+							<h4 class="adve__item__title text-T1B">Эстетика
+								застройки</h4>
+						</div>
+					</div>
+					<div class="section-style__btns">
+						<a href="#" class="btn-secondary">Читать статью на VC</a>
+						<a href="#" class="btn-primary">Подробнее</a>
+					</div>
+				</div>
+				<div class="marquee">
+					<div class="section-style__slider swiper">
+						<div class="swiper-wrapper">
+							<div class="section-style__slider__slide swiper-slide">
+								<picture>
+									<img src="img/service-1.png" alt="slide" width="330" height="330">
+								</picture>
+							</div>
+							<div class="section-style__slider__slide swiper-slide">
+								<picture>
+									<img src="img/plot-1.png" alt="slide" width="330" height="330">
+								</picture>
+							</div>
+							<div class="section-style__slider__slide swiper-slide">
+								<picture>
+									<img src="img/plot-1.png" alt="slide" width="330" height="330">
+								</picture>
+							</div>
+							<div class="section-style__slider__slide swiper-slide">
+								<picture>
+									<img src="img/plot-1.png" alt="slide" width="330" height="330">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-style section-style--1">
+			<div class="wrapper">
+				<div class="section-style__text">
+					<h2 class="text-H2 section__title">Архитектурный стиль<br>
+						в малоэтажном строительстве</h2>
+					<h3 class="text-T1 section__subtitle">В посёлках М2o2 мы развиваем подход архитектурного стиля в застройке
+						территории, что не специфично для России.</h3>
+				</div>
+				<div class="adve">
+					<div class="adve__item">
+						<div class="adve__item__pic">
+							<i class="icon icon-sun-fog"></i>
+						</div>
+						<h4 class="adve__item__title text-T1B">Тесная связь с природой</h4>
+					</div>
+					<div class="adve__item">
+						<div class="adve__item__pic">
+							<i class="icon icon-house-2"></i>
+						</div>
+						<h4 class="adve__item__title text-T1B">Нет недостроев</h4>
+					</div>
+					<div class="adve__item">
+						<div class="adve__item__pic">
+							<i class="icon icon-buildings-2"></i>
+						</div>
+						<h4 class="adve__item__title text-T1B">Нет Шанхая</h4>
+					</div>
+					<div class="adve__item">
+						<div class="adve__item__pic">
+							<i class="icon icon-building-3"></i>
+						</div>
+						<h4 class="adve__item__title text-T1B">Эстетика
+							застройки</h4>
+					</div>
+				</div>
+				<div class="grid-img">
+					<picture class="grid-img__item">
+						<img src="img/faq-slide-1.jpg" alt="slide" width="330" height="330">
+					</picture>
+					<picture class="grid-img__item">
+						<img src="img/faq-slide-1.jpg" alt="slide" width="330" height="330">
+					</picture>
+					<picture class="grid-img__item">
+						<img src="img/faq-slide-1.jpg" alt="slide" width="330" height="330">
+					</picture>
+					<picture class="grid-img__item">
+						<img src="img/faq-slide-1.jpg" alt="slide" width="330" height="330">
+					</picture>
+					<picture class="grid-img__item">
+						<img src="img/faq-slide-1.jpg" alt="slide" width="330" height="330">
+					</picture>
+					<picture class="grid-img__item">
+						<img src="img/faq-slide-1.jpg" alt="slide" width="330" height="330">
+					</picture>
+				</div>
+			</div>
+		</section>
+		<section class="section section-house">
+			<div class="wrapper">
+				<h2 class="text-H2 section__title">Дом из кирпича (ИР-14), 120 м²</h2>
+				<div class="section-house__options">
+					<div class="section-house__options__item tag--white-opacity">
+						<span>1 этаж</span>
+						<img src="img/house_1.svg" alt="icon" width="24" height="24">
+					</div>
+					<div class="section-house__options__item tag--white-opacity">
+						<img src="img/house_2.svg" alt="icon" width="24" height="24">
+						<span>3 комнаты</span>
+					</div>
+					<div class="section-house__options__item tag--white-opacity">
+						<img src="img/house_3.svg" alt="icon" width="24" height="24">
+						<span>сибит</span>
+					</div>
+					<div class="section-house__options__item tag--white-opacity">
+						<img src="img/house_4.svg" alt="icon" width="24" height="24">
+						<span>1 санузел</span>
+					</div>
+				</div>
+				<div class="section-house__prices">
+					<div class="section-house__prices__item">
+						<h4 class="text-T3">стоимость дома</h4>
+						<p class="text-H3">1 200 000 <span class="t-1">руб</span></p>
+					</div>
+					<div class="section-house__prices__item">
+						<h4 class="text-T3">стоимость участка</h4>
+						<p class="text-H3">400 000 <span class="t-1">руб</span></p>
+					</div>
+				</div>
+				<button class="btn-primary">
+					Получить презентацию
+				</button>
+				<div class="section-house__images">
+					<div class="section-house__images__icon">
+						<img src="img/icon-house.svg" alt="icon" width="32" height="32">
+					</div>
+					<div class="section-house__images__inner">
+						<picture class="section-house__images__item">
+							<img src="img/house-1.jpg" alt="house" width="444" height="331">
+						</picture>
+						<picture class="section-house__images__item">
+							<img src="img/house-1.jpg" alt="house" width="444" height="331">
+						</picture>
+						<picture class="section-house__images__item">
+							<img src="img/house-1.jpg" alt="house" width="444" height="331">
+						</picture>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-building">
+			<div class="wrapper">
+				<h2 class="text-H2 section__title">Чем дальше, тем ниже
+					плотность застройки</h2>
+				<h3 class="text-T1 section__subtitle">Стоимость земли ниже, поэтому есть возможность выделить больше территории
+					для зон между участками, чтобы оставалось больше пространства для жителей</h3>
+				<div class="section-building__items">
+					<div class="section-building__items__item">
+						<div class="chips__item">
+							<span class="text-T2">КП «Усадьбы Удино»</span>
+							<i class="icon icon-house-2"></i>
+						</div>
+						<picture>
+							<source srcset="img/simile-1.webp"
+							        type="image/webp">
+							<img src="img/simile-1.jpg" alt="icon" width="668" height="668">
+						</picture>
+					</div>
+					<div class="section-building__items__item">
+						<div class="chips__item">
+							<span class="text-T2">КП «М2о2»</span>
+							<i class="icon icon-house-2"></i>
+						</div>
+						<picture>
+							<source srcset="img/simile-2.webp"
+							        type="image/webp">
+							<img src="img/simile-2.jpg" alt="icon" width="668" height="668">
+						</picture>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-communications">
+			<div class="wrapper">
+				<h2 class="text-H2 section__title">Коммуникации</h2>
+				<div class="inner">
+					<ul class="accordion">
+						<li class="accordion__item">
+							<button class="accordion__item__btn" type="button">
+								<span class="text-H3">Газификация</span>
+								<i class="icon icon-arrow-down-1"></i>
+							</button>
+							<div class="accordion__item__content">
+								<div class="accordion__item__content__icon">
+									<img src="img/gas-station.svg" alt="icon" width="80" height="80">
+								</div>
+								<div class="accordion__item__content__text text-T1">
+									<p>Газификация объекта находится на стадии завершения: 90% работ уже выполнено.
+										Построение газораспределительного шкафа (ГРПШ) и врезка запланированы на осень
+										2024 года.</p>
+									<p>Стоимость подключения абонента = 300 000 руб.
+										(стоимость является ориентировочной и указана с учетом прокладки труб от
+										источника до котла, без учета внутридомового оборудования.)</p>
+									<p>Полная готовность - Конец 2024 года.</p>
+								</div>
+							</div>
+						</li>
+						<li class="accordion__item">
+							<button class="accordion__item__btn" type="button">
+								<span class="text-H3">Газификация</span>
+								<i class="icon icon-arrow-down-1"></i>
+							</button>
+							<div class="accordion__item__content">
+								<div class="accordion__item__content__icon">
+									<img src="img/gas-station.svg" alt="icon" width="80" height="80">
+								</div>
+								<div class="accordion__item__content__text text-T1">
+									<p>Газификация объекта находится на стадии завершения: 90% работ уже выполнено.
+										Построение газораспределительного шкафа (ГРПШ) и врезка запланированы на осень
+										2024 года.</p>
+									<p>Стоимость подключения абонента = 300 000 руб.
+										(стоимость является ориентировочной и указана с учетом прокладки труб от
+										источника до котла, без учета внутридомового оборудования.)</p>
+									<p>Полная готовность - Конец 2024 года.</p>
+								</div>
+							</div>
+						</li>
+						<li class="accordion__item">
+							<button class="accordion__item__btn" type="button">
+								<span class="text-H3">Газификация</span>
+								<i class="icon icon-arrow-down-1"></i>
+							</button>
+							<div class="accordion__item__content">
+								<div class="accordion__item__content__icon">
+									<img src="img/gas-station.svg" alt="icon" width="80" height="80">
+								</div>
+								<div class="accordion__item__content__text text-T1">
+									<p>Газификация объекта находится на стадии завершения: 90% работ уже выполнено.
+										Построение газораспределительного шкафа (ГРПШ) и врезка запланированы на осень
+										2024 года.</p>
+									<p>Стоимость подключения абонента = 300 000 руб.
+										(стоимость является ориентировочной и указана с учетом прокладки труб от
+										источника до котла, без учета внутридомового оборудования.)</p>
+									<p>Полная готовность - Конец 2024 года.</p>
+								</div>
+							</div>
+						</li>
+						<li class="accordion__item">
+							<button class="accordion__item__btn" type="button">
+								<span class="text-H3">Газификация</span>
+								<i class="icon icon-arrow-down-1"></i>
+							</button>
+							<div class="accordion__item__content">
+								<div class="accordion__item__content__icon">
+									<img src="img/gas-station.svg" alt="icon" width="80" height="80">
+								</div>
+								<div class="accordion__item__content__text text-T1">
+									<p>Газификация объекта находится на стадии завершения: 90% работ уже выполнено.
+										Построение газораспределительного шкафа (ГРПШ) и врезка запланированы на осень
+										2024 года.</p>
+									<p>Стоимость подключения абонента = 300 000 руб.
+										(стоимость является ориентировочной и указана с учетом прокладки труб от
+										источника до котла, без учета внутридомового оборудования.)</p>
+									<p>Полная готовность - Конец 2024 года.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="section section-communications section-communications--1">
+			<div class="wrapper">
+				<div class="inner">
+					<h2 class="text-H2 section__title">Все коммуникации готовы!</h2>
+					<h3 class="text-T1 section__subtitle">оставьте свои контактные данные и мы свяжемся с вами
+						в ближайшее время</h3>
+					<div class="section-communications__items">
+						<div class="section-communications__items__item">
+							<img src="img/gas-station.svg" alt="icon" width="80" height="80">
+							<h4 class="text-H4">Газификация</h4>
+						</div>
+						<div class="section-communications__items__item">
+							<img src="img/gas-station.svg" alt="icon" width="80" height="80">
+							<h4 class="text-H4">Газификация</h4>
+						</div>
+						<div class="section-communications__items__item">
+							<img src="img/gas-station.svg" alt="icon" width="80" height="80">
+							<h4 class="text-H4">Газификация</h4>
+						</div>
+						<div class="section-communications__items__item">
+							<img src="img/gas-station.svg" alt="icon" width="80" height="80">
+							<h4 class="text-H4">Газификация</h4>
+						</div>
+					</div>
+					<button class="btn-primary">Хочу здесь жить</button>
+				</div>
+			</div>
+		</section>
+		<section class="section section-vr-1">
+			<div class="wrapper">
+				<h2 class="text-H2 section__title">Экскурсия по посёлку</h2>
+				<div class="inner">
+					<div class="section-vr-1__items">
+						<div class="section-vr-1__items__item section-vr-1__items__item-pic">
+							<picture class="stub-picture">
+								<img src="img/team.jpg" alt="plot">
+							</picture>
+						</div>
+						<div class="section-vr-1__items__item section-vr-1__items__item-content">
+							<h2 class="text-H3 section__subtitle">Осматривайте участки виртуально</h2>
+							<div class="adve">
+								<div class="adve__item">
+									<div class="adve__item__pic">
+										<i class="icon icon-house"></i>
+									</div>
+									<h4 class="adve__item__title text-T1B">Постройте дом вместе с ребёнком</h4>
+								</div>
+								<div class="adve__item">
+									<div class="adve__item__pic">
+										<i class="icon icon-building"></i>
+									</div>
+									<h4 class="adve__item__title text-T1B">Посетите VR шоурум из 12-ти домов</h4>
+								</div>
+								<div class="adve__item">
+									<div class="adve__item__pic">
+										<i class="icon icon-profile-2user"></i>
+									</div>
+									<h4 class="adve__item__title text-T1B">Посетите VR шоурум из 12-ти домов</h4>
+								</div>
+							</div>
+							<div class="btns">
+								<div class="lid">
+									<button class="btn btn-primary btn-lid btn-lid--3">
+										<span class="b-2">Записаться на просмотр</span>
+										<i class="icon icon-arrow-right-1"></i>
+									</button>
+									<p class="text-T3">Заполните заявку, чтобы посетить посёлок виртуально</p>
+								</div>
+								<a href="https://www.youtube.com/watch?v=o1L7afbQJ3E" class="btn-secondary"
+								   data-fancybox="video-1">
+									<i class="icon icon-video-square"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-3d section-vr-1">
+			<div class="wrapper">
+				<h2 class="text-H2 section__title">Экскурсия по посёлку</h2>
+				<div class="inner">
+					<div class="section-vr-1__items">
+						<!--                    <div class="section-vr-1__items__item section-vr-1__items__item-pic section-3d__items__item-pic">-->
+						<!--                        <div class="section-3d__mockup">-->
+						<!--                            <div class="section-3d__mockup__inner">-->
+						<!--                                <video width="100%" height="100%" autoplay loop muted playsinline poster="" class="stub-picture">-->
+						<!--                                    <source src="img/video.MP4" type="video/mp4">-->
+						<!--                                </video>-->
+						<!--                            </div>-->
+						<!--                        </div>-->
+						<!--                    </div>-->
+						<div
+							class="section-vr-1__items__item section-vr-1__items__item-pic section-3d__items__item-pic section-3d__items__item-pic--1">
+							<div class="section-3d__mockup section-3d__mockup--1">
+								<div class="section-3d__mockup__inner">
+									<video width="100%" height="100%" autoplay loop muted playsinline poster="" class="stub-picture">
+										<source src="img/video.MP4" type="video/mp4">
+									</video>
+								</div>
+							</div>
+						</div>
+						<div class="section-vr-1__items__item section-vr-1__items__item-content">
+							<h2 class="text-H3 section__subtitle">Осматривайте участки в 3D</h2>
+							<div class="adve">
+								<div class="adve__item">
+									<div class="adve__item__pic">
+										<i class="icon icon-map-1"></i>
+									</div>
+									<h4 class="adve__item__title text-T1B">Выбирайте 1 из 1300 участков</h4>
+								</div>
+								<div class="adve__item">
+									<div class="adve__item__pic">
+										<i class="icon icon-bank"></i>
+									</div>
+									<h4 class="adve__item__title text-T1B">Представьте как выглядит архитектурный стиль</h4>
+								</div>
+								<div class="adve__item">
+									<div class="adve__item__pic">
+										<i class="icon icon-mobile"></i>
+									</div>
+									<h4 class="adve__item__title text-T1B">Попробуйте AR-режим просмотра</h4>
+								</div>
+							</div>
+							<div class="btns">
+								<div class="lid">
+									<button class="btn-primary btn-lid btn-lid--1">
+										<span class="b-2">ПОЛУЧИТЬ 3d-каталог</span>
+										<i class="icon icon-arrow-right-1"></i>
+									</button>
+									<p class="text-T3">Заполните заявку, чтобы осмотреть посёлок в 3D</p>
+								</div>
+								<a href="https://www.youtube.com/watch?v=o1L7afbQJ3E" class="btn-secondary"
+								   data-fancybox="video">
+									<i class="icon icon-video-square"></i>
+								</a>
+							</div>
+							<div class="apps">
+								<a href="#" class="apps__item">
+									<svg>
+										<use xlink:href="img/sprite.svg#app"></use>
+									</svg>
+								</a>
+								<a href="#" class="apps__item">
+									<svg>
+										<use xlink:href="img/sprite.svg#ru-store"></use>
+									</svg>
+								</a>
+								<a href="#" class="apps__item">
+									<svg>
+										<use xlink:href="img/sprite.svg#google"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-3d section-vr-1">
+			<div class="wrapper">
+				<h2 class="text-H2 section__title">Экскурсия по посёлку</h2>
+				<div class="inner">
+					<div class="section-vr-1__items">
+						<div class="section-vr-1__items__item section-vr-1__items__item-pic section-3d__items__item-pic">
+							<div class="section-3d__mockup">
+								<div class="section-3d__mockup__inner">
+									<video width="100%" height="100%" autoplay loop muted playsinline poster="" class="stub-picture">
+										<source src="img/video.MP4" type="video/mp4">
+									</video>
+								</div>
+							</div>
+						</div>
+						<!--						<div-->
+						<!--							class="section-vr-1__items__item section-vr-1__items__item-pic section-3d__items__item-pic section-3d__items__item-pic&#45;&#45;1">-->
+						<!--							<div class="section-3d__mockup section-3d__mockup&#45;&#45;1">-->
+						<!--								<div class="section-3d__mockup__inner">-->
+						<!--									<video width="100%" height="100%" autoplay loop muted playsinline poster="" class="stub-picture">-->
+						<!--										<source src="img/video.MP4" type="video/mp4">-->
+						<!--									</video>-->
+						<!--								</div>-->
+						<!--							</div>-->
+						<!--						</div>-->
+						<div class="section-vr-1__items__item section-vr-1__items__item-content">
+							<h2 class="text-H3 section__subtitle">Осматривайте участки в 3D</h2>
+							<div class="adve">
+								<div class="adve__item">
+									<div class="adve__item__pic">
+										<i class="icon icon-map-1"></i>
+									</div>
+									<h4 class="adve__item__title text-T1B">Выбирайте 1 из 1300 участков</h4>
+								</div>
+								<div class="adve__item">
+									<div class="adve__item__pic">
+										<i class="icon icon-bank"></i>
+									</div>
+									<h4 class="adve__item__title text-T1B">Представьте как выглядит архитектурный стиль</h4>
+								</div>
+								<div class="adve__item">
+									<div class="adve__item__pic">
+										<i class="icon icon-mobile"></i>
+									</div>
+									<h4 class="adve__item__title text-T1B">Попробуйте AR-режим просмотра</h4>
+								</div>
+							</div>
+							<div class="btns">
+								<div class="lid">
+									<button class="btn-primary btn-lid btn-lid--1">
+										<span class="b-2">ПОЛУЧИТЬ 3d-каталог</span>
+										<i class="icon icon-arrow-right-1"></i>
+									</button>
+									<p class="text-T3">Заполните заявку, чтобы осмотреть посёлок в 3D</p>
+								</div>
+								<a href="https://www.youtube.com/watch?v=o1L7afbQJ3E" class="btn-secondary"
+								   data-fancybox="video">
+									<i class="icon icon-video-square"></i>
+								</a>
+							</div>
+							<div class="apps">
+								<a href="#" class="apps__item">
+									<svg>
+										<use xlink:href="img/sprite.svg#app"></use>
+									</svg>
+								</a>
+								<a href="#" class="apps__item">
+									<svg>
+										<use xlink:href="img/sprite.svg#ru-store"></use>
+									</svg>
+								</a>
+								<a href="#" class="apps__item">
+									<svg>
+										<use xlink:href="img/sprite.svg#google"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-person section-person--1">
+			<div class="wrapper">
+				<div class="section-person__items">
+					<div class="section-person__items__item section-person__items__item-pic">
+						<picture class="stub-picture">
+							<img src="img/person.png" alt="person" width="394" height="300">
+						</picture>
+					</div>
+					<div class="section-person__items__item section-person__items__item-content">
+						<div class="text">
+							<h2 class="text-H2">напишите мне напрямую</h2>
+							<p class="text-T1 text__desc">Руководитель продаж земельных участков в М2о2 и коттеджных поселков
+								Инвест-недвижимости: </p>
+							<p class="text__person">
+								<svg>
+									<use xlink:href="img/sprite.svg#user"></use>
+								</svg>
+								<span class="text-T1B">Клим Серебренников</span>
+							</p>
+						</div>
+						<div class="btns">
+							<a href="#" class="btn-secondary">
+								<svg>
+									<use xlink:href="img/sprite.svg#wh"></use>
+								</svg>
+								<span>WhatsAPP</span>
+							</a>
+							<a href="#" class="btn-primary">
+								<svg>
+									<use xlink:href="img/sprite.svg#tg"></use>
+								</svg>
+								<span>Telegram</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-callback">
+			<div class="wrapper">
+				<div class="section-callback__items">
+					<div class="section-callback__items__text">
+						<div class="section-callback__icon">
+							<svg width="32" height="32">
+								<use xlink:href="img/sprite.svg#messages"></use>
+							</svg>
+						</div>
+						<div>
+							<h2 class="h-2">Заполните форму заявки</h2>
+							<p class="t-1">и мы свяжемся с вами в ближайшее время.</p>
+						</div>
+					</div>
+					<button class="btn btn-secondary js-modal" data-modal="#modal_1">Оставить заявку</button>
+				</div>
+			</div>
+		</section>
+		<section class="section-white section-links">
+			<div class="wrapper">
+				<div class="inner">
+					<div class="section-links__items">
+						<div class="section-links__content">
+							<p class="text-T1B">больше о проекте</p>
+							<h2 class="text-H3">Главная страница</h2>
+							<a href="#" class="btn btn-round-orange">
+								<i class="icon icon-arrow-right-1"></i>
+							</a>
+						</div>
+						<div class="section-links__content">
+							<p class="text-T1B">далее</p>
+							<h2 class="text-H3">Проекты</h2>
+							<a href="#" class="btn btn-round-white">
+								<i class="icon icon-arrow-right-1"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</main>
+
+<!-- Main end -->
+
+<!-- Footer start -->
+<footer class="footer">
+	<div class="footer__top">
+		<div class="wrapper">
+			<div class="footer__items">
+				<div class="footer__items__company">
+					<a href="#" class="footer__items__company__logo">
+						<picture class="logo">
+							<img src="img/logo.svg" alt="logo" width="131"
+							     height="48">
+						</picture>
+						<picture class="logo-mob">
+							<img src="img/logo.svg" alt="logo" width="131"
+							     height="48">
+						</picture>
+					</a>
+					<div class="footer__items__company__text">
+						<p class="text-T3">Весь контент на сайте носит информационный характер и не является публичной
+							офертой, определяемой ст. 437(2) ГК РФ</p>
+					</div>
+				</div>
+				<div class="footer__items__nav">
+					<ul class="footer__list">
+						<li class="footer__list__item">
+							<span class="footer__list__title">Карта сайта</span>
+						</li>
+						<li class="footer__list__item link-genplan">
+							<a href="#" class="footer__list__link link b-2">ГЕНПЛАН</a>
+						</li>
+						<li class="footer__list__item">
+							<a href="#" class="footer__list__link link b-2">Галерея</a>
+						</li>
+					</ul>
+					<ul class="footer__list">
+						<li class="footer__list__item">
+							<span class="footer__list__title">Актуально</span>
+						</li>
+						<li class="footer__list__item">
+							<a href="#" class="footer__list__link link b-2">Галерея</a>
+						</li>
+						<li class="footer__list__item">
+							<a href="#" class="footer__list__link link b-2">Отзывы</a>
+						</li>
+						<li class="footer__list__item">
+							<a href="#" class="footer__list__link link b-2">Контакты</a>
+						</li>
+					</ul>
+					<ul class="footer__list footer__list__contacts">
+						<li class="footer__list__item">
+							<span class="footer__list__title">Связь с нами</span>
+						</li>
+						<li class="footer__list__item">
+							<span class="t-2">покупка участков</span>
+							<a href="tel:+7 (495) 241-6000" class="footer__list__link link t-1">
+								+7 (495) 241-6000
+							</a>
+						</li>
+						<li class="footer__list__item">
+							<span class="t-2">отдых</span>
+							<a href="tel:+7 (499) 460-4251" class="footer__list__link link t-1">
+								+7 (499) 460-4251
+							</a>
+						</li>
+					</ul>
+					<ul class="footer__list footer__list__social">
+						<li class="footer__list__item">
+							<a href="#" class="btn btn-round">
+								<svg width="20" height="20">
+									<use xlink:href="img/sprite.svg#tg"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__list__item">
+							<a href="#" class="btn btn-round">
+								<svg width="17" height="12">
+									<use xlink:href="img/sprite.svg#youtube"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="wrapper">
+			<div class="footer__bottom__items">
+				<div class="footer__bottom__items__item footer__bottom__items__conf"><a
+					href="https://m2o2.ru/politics.php" class=" link b-2 link link--underline t-2">Политика
+					конфиденциальности</a> <a href="https://m2o2.ru/politics.php"
+				                            class=" link b-2 link link--underline t-2">Пользовательское соглашение</a>
+				</div>
+				<div class="footer__bottom__items__item">
+					<p class="t-2">© M2o2 2018-2023</p>
+					<a href="#" class="footer__bottom__items__item__logo link">
+						<span class="t-2">разработано - </span>
+						<svg>
+							<use xlink:href="img/sprite.svg#logo-5AM"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Footer end -->
+
+<!--Modal start-->
+<div id="modal_1" class="modal">
+	<button class="modal__close js-modal__close">
+		X
+	</button>
+	<form class="modal__content">
+		<h3 class="modal__content__title">Купить в 1 клик</h3>
+		<label for="phone"></label>
+		<input type="tel" name="phone" id="phone" placeholder="+ 7 (---) --- -- -- "
+		       class="modal__content__input phone-mask">
+		<label for="name"></label>
+		<input type="text" name="name" id="name" placeholder="Ваше имя"
+		       class="modal__content__input">
+		<div class="modal__content__conf">
+			<p>Нажимая кнопку “Отправить”, я даю согласие на обработку моих персональных данных в соответствии с</p>
+			<a href="#">Условиями конфиденциальности</a>
+		</div>
+		<button class="btn">Отправить</button>
+	</form>
+</div>
+<div id="modal__menu" class="modal modal__menu">
+	<div class="modal__menu__header">
+		<picture class="modal__logo">
+			<source srcset="./img/logo.webp" type="image/webp">
+			<img src="./img/logo.png" alt="logo" width="180" height="48">
+		</picture>
+		<button class="js-modal__close modal__close">
+			<i class="icon icon-add"></i>
+		</button>
+	</div>
+	<div class="modal__content">
+		<nav class="nav" id="mobile-menu">
+			<ul class="nav__list">
+				<li class="nav__list__item">
+					<a href="#genplan" class="nav__list__item__link">Генплан</a>
+				</li>
+				<li class="nav__list__item">
+					<a href="#gallery" class="nav__list__item__link">Галерея</a>
+				</li>
+				<li class="nav__list__item">
+					<a href="#" class="nav__list__item__link"><a href="#environment" class=" link b-2">Окружение</a></a>
+				</li>
+				<li class="nav__list__item">
+					<a href="#" class="nav__list__item__link">Сервисы</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="modal__content__footer">
+			<div class="modal__content__footer__phones modal__phones">
+				<div class="modal__phones__item">
+					<span class="t-2">отдел продаж:</span>
+					<a href="tel:+7 (499) 460-4251" class="link t-1">+7 (499) 460-4251</a>
+				</div>
+				<div class="modal__phones__item">
+					<span class="t-2">тех. поддержка:</span>
+					<a href="tel:+7 (999) 775-75-82" class="link t-1">+7 (999) 775-75-82</a>
+				</div>
+			</div>
+			<button class="btn btn-orange js-modal js-modal__close" data-modal="#modal_1">
+				<span>Оставить заявку</span>
+			</button>
+		</div>
+	</div>
+</div>
+<div class="modal__backdrop modal__backdrop--hidden" id="modal-backdrop"></div>
+<!--Modal end-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.29/fancybox.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</body>
+
+</html>

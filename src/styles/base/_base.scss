@@ -1,0 +1,808 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@mixin text-gen($size: 16px, $weight: 400, $height: 20px, $font: "Inter") {
+	font-family: $font, sans-serif;
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $height;
+}
+
+@mixin text-H1 {
+	@include text-gen(64px, 700, 80px, "Avenir Next");
+	
+	@media screen and (min-width: 1921px) {
+		@include text-gen(80px, 700, 96px, "Avenir Next");
+	}
+	
+	@include lm-block {
+		@include text-gen(52px, 700, 60px, "Avenir Next");
+	}
+	
+	@include xsm-block {
+		@include text-gen(36px, 700, 40px, "Avenir Next");
+	}
+}
+
+@mixin text-H2 {
+	@include text-gen(36px, 700, 48px, "Avenir Next");
+	
+	@media screen and (min-width: 1921px) {
+		@include text-gen(46px, 700, 54px, "Avenir Next");
+	}
+
+	@include md-block {
+		@include text-gen(28px, 700, 36px, "Avenir Next");
+	}
+	
+	@include xsm-block {
+		@include text-gen(26px, 700, 32px, "Avenir Next");
+	}
+}
+
+@mixin text-H3 {
+	@include text-gen(24px, 600, 32px);
+	
+	@media screen and (min-width: 1921px) {
+		@include text-gen(36px, 600, 44px);
+	}
+	
+	@include lm-block {
+		@include text-gen(20px, 600, 28px);
+	}
+	
+	@include xsm-block {
+		@include text-gen(18px, 600, 24px);
+	}
+}
+
+@mixin text-H4 {
+	@include text-gen(20px, 600, 26px);
+	
+	@media screen and (min-width: 1921px) {
+		@include text-gen(24px, 600, 32px);
+	}
+
+	@include lm-block {
+		@include text-gen(16px, 600, 20px);
+	}
+
+	@include xsm-block {
+		// всё по макету
+		@include text-gen(16px, 600, 22px);
+	}
+}
+
+@mixin text-T1B {
+	@include text-gen(16px, 600, 22px);
+	
+	@media screen and (min-width: 1921px) {
+		@include text-gen(20px, 600, 28px);
+	}
+	
+	@include lm-block {
+		@include text-gen(14px, 600, 18px);
+	}
+}
+
+@mixin text-T1 {
+	@include text-gen(16px, 400, 22px);
+	
+	@media screen and (min-width: 1921px) {
+		@include text-gen(20px, 400, 28px);
+	}
+
+	@include lm-block {
+		@include text-gen(14px, 400, 18px);
+	}
+}
+
+@mixin text-T2 {
+	@include text-gen(14px, 400, 18px);
+	
+	@media screen and (min-width: 1921px) {
+		@include text-gen(18px, 600, 26px);
+	}
+	
+	@include lm-block {
+		@include text-gen(12px, 400, 16px);
+	}
+}
+
+@mixin text-T3 {
+	@include text-gen(12px, 400, 16px);
+	
+	@media screen and (min-width: 1921px) {
+		@include text-gen(16px, 400, 22px);
+	}
+	
+	@include lm-block {
+		@include text-gen(10px, 400, 14px);
+	}
+}
+
+@mixin text-B1 {
+	@include text-gen(14px, 500, 18px);
+	
+	@media screen and (min-width: 1921px) {
+		@include text-gen(18px, 500, 26px);
+	}
+	
+	@include lm-block {
+		@include text-gen(14px, 500, 18px);
+	}
+}
+
+@mixin btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  border-radius: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  height: 56px;
+  white-space: nowrap;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media screen and (min-width: 1921px) {
+    height: 64px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include lm-block {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @include xsm-block {
+    height: 48px;
+  }
+}
+
+.btn-tertiary {
+  @include btn;
+  padding: 2px 0;
+  height: 22px;
+  color: var(--neutral-500);
+
+  svg {
+    fill: var(--neutral-500);
+  }
+
+  &:hover {
+    color: var(--neutral-100);
+
+    svg {
+      fill: var(--neutral-100);
+    }
+  }
+
+  &:active {
+    color: var(--primary-100);
+  }
+}
+
+.btn-primary {
+  @include btn;
+  padding: 0 32px;
+  background-color: var(--primary-500);
+  color: var(--neutral-100);
+
+  svg {
+    fill: var(--neutral-100);
+    stroke: var(--neutral-100);
+  }
+
+  &:hover {
+    background-color: var(--primary-400);
+  }
+
+  &:active {
+    background-color: var(--primary-600);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.btn-secondary {
+  @include btn;
+  padding: 0 32px;
+  background-color: var(--neutral-100);
+  color: var(--primary-600);
+
+  svg {
+    fill: var(--primary-600);
+    stroke: var(--primary-600);
+  }
+
+  &:hover {
+    background-color: var(--neutral-300);
+  }
+
+  &:active {
+    color: var(--neutral-800);
+    background-color: var(--neutral-300);
+
+    svg {
+      fill: var(--neutral-800);
+      stroke: var(--neutral-800);
+    }
+  }
+
+  &:disabled {
+    color: rgba(46, 66, 50, 0.3);
+
+    svg {
+      fill: rgba(46, 66, 50, 0.3);
+      stroke: rgba(46, 66, 50, 0.3);
+    }
+  }
+}
+
+.btn-secondary-grey {
+  @include btn;
+  padding: 0 32px;
+  background-color: var(--neutral-200);
+  color: var(--primary-600);
+
+  svg {
+    fill: var(--primary-600);
+    stroke: var(--primary-600);
+  }
+
+  &:hover {
+    background-color: var(--neutral-300);
+  }
+
+  &:active {
+    color: var(--neutral-800);
+    background-color: var(--neutral-300);
+
+    svg {
+      fill: var(--neutral-800);
+      stroke: var(--neutral-800);
+    }
+  }
+
+  &:disabled {
+    color: rgba(46, 66, 50, 0.3);
+
+    svg {
+      fill: rgba(46, 66, 50, 0.3);
+      stroke: rgba(46, 66, 50, 0.3);
+    }
+  }
+}
+
+.btn-advertising {
+  @include btn;
+  padding: 10px 32px;
+  background-color: var(--secondary-1-500);
+  color: var(--neutral-100);
+
+  svg {
+    fill: var(--neutral-100);
+    stroke: var(--neutral-100);
+  }
+
+  &:hover {
+    background-color: var(--secondary-1-400);
+  }
+
+  &:active {
+    background-color: var(--secondary-1-600);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+@mixin link {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+
+  @media screen and (min-width: 1921px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include lm-block {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--underline {
+    text-decoration: underline;
+  }
+}
+
+.link-green,
+.link-green--underline {
+  @include link;
+  color: var(--primary-700);
+  text-decoration: none;
+
+  svg {
+    fill: var(--primary-700);
+    stroke: var(--primary-700);
+  }
+
+  &:hover {
+    color: var(--primary-400);
+
+    svg {
+      fill: var(--primary-400);
+      stroke: var(--primary-400);
+    }
+  }
+
+  &:active {
+    color: var(--primary-600);
+
+    svg {
+      fill: var(--primary-600);
+      stroke: var(--primary-600);
+    }
+  }
+
+  &:disabled {
+    color: rgba(20, 102, 49, 0.3);
+
+    svg {
+      fill: rgba(20, 102, 49, 0.3);
+      stroke: rgba(20, 102, 49, 0.3);
+    }
+  }
+}
+
+.link-white,
+.link-white--underline {
+  @include link;
+  color: var(--neutral-100);
+  text-decoration: none;
+
+  svg {
+    fill: var(--neutral-100);
+    stroke: var(--neutral-100);
+  }
+
+  &:hover {
+    color: var(--primary-300);
+
+    svg {
+      fill: var(--primary-300);
+      stroke: var(--primary-300);
+    }
+  }
+
+  &:active {
+    color: var(--primary-600);
+
+    svg {
+      fill: var(--primary-600);
+      stroke: var(--primary-600);
+    }
+  }
+
+  &:disabled {
+    color: rgba(255, 255, 255, 0.3);
+
+    svg {
+      fill: rgba(255, 255, 255, 0.3);
+      stroke: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+@mixin segment {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 20px;
+  border-radius: 24px;
+  cursor: pointer;
+  text-wrap: nowrap;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &:hover {
+    color: var(--primary-500);
+    background-color: var(--neutral-300);
+
+    svg {
+      fill: var(--primary-500);
+      stroke: var(--primary-500);
+    }
+  }
+
+  &:active,
+  &.--active {
+    color: var(--neutral-100);
+    background-color: var(--primary-500);
+
+    svg {
+      fill: var(--neutral-100);
+      stroke: var(--neutral-100);
+    }
+  }
+
+  &:disabled {
+    color: rgba(46, 66, 50, 0.3);
+    background-color: var(--neutral-300);
+
+    svg {
+      fill: rgba(46, 66, 50, 0.3);
+      stroke: rgba(46, 66, 50, 0.3);
+    }
+  }
+
+  @media screen and (min-width: 1921px) {
+    height: 48px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include lm-block {
+    height: 36px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @include md-block {
+    height: 32px;
+  }
+}
+
+.segment {
+  &-group {
+    display: flex;
+    height: 48px;
+    padding: 4px;
+    border-radius: 24px;
+    background-color: var(--neutral-100);
+
+    .segment--active {
+      background-color: var(--primary-500);
+      color: var(--neutral-100);
+    }
+
+    &--grey {
+      background-color: var(--neutral-200);
+    }
+
+    @media screen and (min-width: 1921px) {
+      height: 56px;
+    }
+  
+    @include lm-block {
+      height: 44px;
+    }
+
+    @include xsm-block {
+      height: 40px;
+    }
+  }
+
+  &-white {
+    @include segment;
+    background-color: var(--neutral-100);
+    color: var(--neutral-800);
+    white-space: nowrap;
+
+    svg {
+      fill: var(--neutral-800);
+      stroke: var(--neutral-800);
+    }
+  }
+
+  &-grey {
+    @include segment;
+    background-color: var(--neutral-200);
+    color: var(--neutral-800);
+    white-space: nowrap;
+
+    svg {
+      fill: var(--neutral-800);
+      stroke: var(--neutral-800);
+    }
+
+    &.active {
+      background-color: var(--primary-500);
+      color: var(--neutral-100);
+    }
+  }
+}
+
+@mixin tag {
+  padding: 7px 12px;
+  border-radius: 24px;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+
+  @include text-T2;
+}
+
+.tag {
+  &--green-opacity {
+    @include tag;
+    background-color: var(--green-opacity);
+    color: var(--neutral-100);
+  }
+
+  &--white-opacity {
+    @include tag;
+    background-color: var(--white-opacity);
+    color: var(--neutral-800);
+  }
+
+  &--grey-opacity {
+    @include tag;
+    background-color: var(--black-opacity);
+    color: var(--neutral-100);
+  }
+
+  &--red-opacity {
+    @include tag;
+    background-color: var(--red-opacity);
+    color: var(--neutral-100);
+  }
+
+  &--yellow-opacity {
+    @include tag;
+    background-color: var(--yellow-opacity);
+    color: var(--neutral-700);
+  }
+
+  &--yellow {
+    @include tag;
+    background-color: var(--secondary-2-500);
+    color: var(--neutral-800);
+  }
+
+  &--green {
+    @include tag;
+    background-color: var(--primary-500);
+    color: var(--neutral-100);
+  }
+
+  &--red {
+    @include tag;
+    background-color: var(--secondary-1-500);
+    color: var(--neutral-100);
+  }
+
+  &--accent-1 {
+    @include tag;
+    background-color: var(--accent-1-500);
+    color: var(--neutral-100);
+  }
+
+  &--grey {
+    @include tag;
+    background-color: var(--neutral-600);
+    color: var(--neutral-100);
+  }
+
+  &--bg-1 {
+    @include tag;
+    background-color: var(--neutral-100);
+    color: var(--neutral-800);
+  }
+
+  &--bg-2 {
+    @include tag;
+    background-color: var(--neutral-200);
+    color: var(--neutral-800);
+  }
+
+  &-grey {
+    @include tag;
+    background-color: var(--neutral-200);
+    color: var(--neutral-800);
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+
+  &__item {
+    position: relative;
+    display: flex;
+
+    &::after {
+      content: "/";
+      position: absolute;
+      right: -14px;
+      top: 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      color: var(--neutral-500);
+    }
+
+    a {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      color: var(--neutral-500);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--primary-400);
+      }
+    }
+
+    &:last-child {
+      &::after {
+        content: none;
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        color: var(--neutral-100);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1921px) {
+    &__item {
+      &::after {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+      }
+
+      a {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+      }
+
+      &:last-child {
+        span {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+  
+  @include sm-block {
+    flex-wrap: wrap;
+    gap: 14px;
+  
+    &__item {
+      &::after {
+        right: -9px;
+      }
+    }
+  }
+}
+
+@mixin switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--neutral-800);
+  text-wrap: nowrap;
+
+  @media screen and (min-width: 1921px) {
+    width: 48px;
+    height: 48px;
+  }
+
+  @include md-block {
+    width: 36px;
+    height: 36px;
+  }
+
+  @include xsm-block {
+    width: 32px;
+    height: 32px;
+  }
+
+  @include xs-block {
+    width: 32px;
+    height: 32px;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    background-color: var(--neutral-300);
+  }
+}
+
+/* text-styles */
+.text-H1 {
+  @include text-H1;
+}
+
+.text-H2 {
+  @include text-H2;
+}
+
+.text-H3 {
+  @include text-H3;
+}
+
+.text-H4 {
+  @include text-H4;
+}
+
+.text-T1B {
+  @include text-T1B;
+}
+
+.text-T1 {
+  @include text-T1;
+}
+
+.text-T2 {
+  @include text-T2;
+}
+
+.text-T3 {
+  @include text-T3;
+}
+
+.text-B1 {
+  @include text-B1;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-grey {
+  color: var(--neutral-600);
+}
+
+.text-grey-2 {
+  color: var(--neutral-500);
+}
+
+.text-white {
+  color: var(--neutral-100);
+}
+
+.text-green {
+  color: var(--primary-600);
+}
+
+.text-center {
+  text-align: center;
+}

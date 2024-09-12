@@ -1,0 +1,52 @@
+.accordion {
+  &__item {
+    margin-bottom: 15px;
+
+    &__btn {
+      position: relative;
+      width: 100%;
+      padding: 12px 30px;
+
+      &::after {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        width: 17px;
+        height: 17px;
+        content: '';
+        border: 1px solid;
+        border-color: transparent #000 #000 transparent;
+        transition: border-color 0.2s ease-in-out, bottom 0.4s ease-in-out;
+        transform: rotate(45deg);
+      }
+
+      &.active::after {
+        bottom: 5px;
+        border-color: #000 transparent transparent #000;
+      }
+
+      &:focus {
+        outline:none;
+      }
+
+      &:focus, &:hover {
+        border-color: #F00;
+
+        &::after {
+          border-color: transparent red red transparent;
+        }
+      }
+    }
+
+    &__content {
+      height: 0;
+      margin-top: -2px;
+      overflow: hidden;
+      transition: height .4s ease-in-out;
+
+      &.active {
+        height: auto;
+      }
+    }
+  }
+}

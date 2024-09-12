@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="robots" content="none"/>
+    <link rel="icon" href="img/favicon.ico" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon.ico">
+    <title>M2O2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/iconsax-font-icon@1.1.0/dist/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="./styles/styles.scss"/>
+
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body class="scrollbar-none">
+<!--Loader start-->
+<div class="loader-wrapper">
+    <div class="loader">
+        <div class="loader__img">
+            <picture>
+                <source srcset="img/logo-icon.webp" type="image/webp">
+                <img src="img/logo-icon.png" alt="slide" width="624"
+                     height="626">
+            </picture>
+        </div>
+    </div>
+</div>
+<!--Loader end-->
+
+<!-- Header start -->
+<header class="header">
+    <div class="wrapper">
+        <div class="header__items">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__list__item">
+                        <a href="#" class="nav__list__item__link nav__list__item__link--active">Проекты</a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a href="#" class="nav__list__item__link">Генплан</a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a href="#" class="nav__list__item__link">Галерея</a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a href="#" class="nav__list__item__link">Отдых</a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a href="#" class="nav__list__item__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="/" class="header__items__logo">
+                <picture>
+                    <source srcset="./img/logo.webp" type="image/webp">
+                    <img src="./img/logo.png" alt="logo" width="180" height="48">
+                </picture>
+            </a>
+            <div class="header__items__right">
+                <div class="header__items__phones">
+                    <a href="tel:+7 (495) 241-6000" class="header__items__phones__item">
+                        <span class="t-1">+7 (495) 241-6000</span>
+                        <p class="t-2">покупка участков</p>
+                    </a>
+                    <a href="tel:+7 (499) 460-4251" class="header__items__phones__item">
+                        <span class="t-1">+7 (499) 460-4251</span>
+                        <p class="t-2">отдых</p>
+                    </a>
+                </div>
+                <button class="btn js-modal" data-modal="#modal_1">
+                    Оставить заявку
+                </button>
+            </div>
+            <button class="burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+<!-- Header end -->
+
+<!--Mobile menu-->
+<nav class="mobile-nav">
+    <ul class="mobile-nav__list">
+        <li class="mobile-nav__list__item">
+            <a href="#" class="mobile-nav__list__item__link mobile-nav__list__item__link--active">Проекты</a>
+        </li>
+        <li class="mobile-nav__list__item">
+            <a href="#" class="mobile-nav__list__item__link">Генплан</a>
+        </li>
+        <li class="mobile-nav__list__item">
+            <a href="#" class="mobile-nav__list__item__link">Галерея</a>
+        </li>
+        <li class="mobile-nav__list__item">
+            <a href="#" class="mobile-nav__list__item__link">Отдых</a>
+        </li>
+        <li class="mobile-nav__list__item">
+            <a href="#" class="mobile-nav__list__item__link">Контакты</a>
+        </li>
+    </ul>
+</nav>
+<!--Mobile menu end-->
+
+<!-- Main start -->
+<main class="main">
+    <div class="promo">
+        <div class="promo__slider">
+            <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-home section-parallax">
+                        <div class="wrapper">
+                            <div class="swiper-slide-container">
+                                <picture class="slide-home__before block-parallax">
+                                    <source srcset="img/bg-promo_before.webp" type="image/webp">
+                                    <img src="img/bg-promo_before.png" alt="promo" width="172" height="170">
+                                </picture>
+                                <div class="location">
+                                    <div class="location__icon">
+                                        <i class="icon icon-location"></i>
+                                    </div>
+                                    <span class="t-2">Симферопольское шоссе <br>110 км. от МКАД</span>
+                                </div>
+                                <div class="content">
+                                    <div class="content__text">
+                                        <div class="chips">
+                                            <div class="chips__item">
+                                                <i class="icon icon icon-shopping-cart"></i>
+                                                <span class="b-1">4 посёлка В продаже</span>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="location__icon">
+                                                <i class="icon icon-location"></i>
+                                            </div>
+                                            <span class="t-3">Симферопольское шоссе 110 км. от МКАД</span>
+                                        </div>
+                                        <h1 class="content__text__title hp">Земельные участки</h1>
+                                        <h3 class="content__text__subtitle h-2">в коттеджных посёлках M2o2</h3>
+                                        <div class="buttons">
+                                            <a href="#" class="btn">о проекте</a>
+                                            <a href="#" class="btn-img">
+                                                <span>на генплан</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <picture class="slide-home__after block-parallax">
+                                    <source srcset="img/bg-promo_after.webp" type="image/webp">
+                                    <img src="img/bg-promo_after.png" alt="promo" width="95" height="99">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="swiper-slide-container">
+                                <div class="location">
+                                    <div class="location__icon">
+                                        <i class="icon icon-location"></i>
+                                    </div>
+                                    <span class="t-2">Симферопольское шоссе <br>110 км. от МКАД</span>
+                                </div>
+                                <div class="content">
+                                    <div class="content__img">
+                                        <picture>
+                                            <source srcset="img/slide-1.webp" type="image/webp">
+                                            <img src="img/slide-1.png" alt="slide" width="624"
+                                                 height="626">
+                                        </picture>
+                                    </div>
+                                    <div class="content__text">
+                                        <div class="chips">
+                                            <div class="chips__item">
+                                                <i class="icon icon icon-shopping-cart"></i>
+                                                <span class="b-1">В продаже</span>
+                                            </div>
+                                            <div class="chips__item">
+                                                <i class="icon icon icon-house"></i>
+                                                <span class="b-1">Единый стиль</span>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="location__icon">
+                                                <i class="icon icon-location"></i>
+                                            </div>
+                                            <span class="t-3">Симферопольское шоссе 110 км. от МКАД</span>
+                                        </div>
+                                        <h2 class="content__text__title hp">Лучистое</h2>
+                                        <h3 class="content__text__subtitle">участки от 200 тыс. руб</h3>
+                                        <div class="buttons">
+                                            <a href="#" class="btn-img btn-img--1 disabled">
+                                                <span>Подробнее</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="swiper-slide-container">
+                                <div class="location">
+                                    <div class="location__icon">
+                                        <i class="icon icon-location"></i>
+                                    </div>
+                                    <span class="t-2">Симферопольское шоссе <br>110 км. от МКАД</span>
+                                </div>
+                                <div class="content">
+                                    <div class="content__img">
+                                        <picture>
+                                            <source srcset="img/slide-2.webp" type="image/webp">
+                                            <img src="img/slide-2.png" alt="slide" width="624"
+                                                 height="626">
+                                        </picture>
+                                    </div>
+                                    <div class="content__text">
+                                        <div class="chips">
+                                            <div class="chips__item">
+                                                <i class="icon icon-shopping-cart"></i>
+                                                <span class="b-1">В продаже</span>
+                                            </div>
+                                            <div class="chips__item">
+                                                <i class="icon icon-house"></i>
+                                                <span class="b-1">Единый стиль</span>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="location__icon">
+                                                <i class="icon icon-location"></i>
+                                            </div>
+                                            <span class="t-3">Симферопольское шоссе 110 км. от МКАД</span>
+                                        </div>
+                                        <h2 class="content__text__title hp">Мега</h2>
+                                        <h3 class="content__text__subtitle">участки от 200 тыс. руб</h3>
+                                        <div class="buttons">
+                                            <a href="#" class="btn-img btn-img--2">
+                                                <span>Подробнее</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="swiper-slide-container">
+                                <div class="location">
+                                    <div class="location__icon">
+                                        <i class="icon icon-location"></i>
+                                    </div>
+                                    <span class="t-2">Симферопольское шоссе <br>110 км. от МКАД</span>
+                                </div>
+                                <div class="content">
+                                    <div class="content__img">
+                                        <picture>
+                                            <source srcset="img/slide-3.webp" type="image/webp">
+                                            <img src="img/slide-3.png" alt="slide" width="624"
+                                                 height="626">
+                                        </picture>
+                                    </div>
+                                    <div class="content__text">
+                                        <div class="chips">
+                                            <div class="chips__item">
+                                                <i class="icon icon-shopping-cart"></i>
+                                                <span class="b-1">В продаже</span>
+                                            </div>
+                                            <div class="chips__item">
+                                                <i class="icon icon-house"></i>
+                                                <span class="b-1">Единый стиль</span>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="location__icon">
+                                                <i class="icon icon-location"></i>
+                                            </div>
+                                            <span class="t-3">Симферопольское шоссе 110 км. от МКАД</span>
+                                        </div>
+                                        <h2 class="content__text__title hp">гельвеция</h2>
+                                        <h3 class="content__text__subtitle">участки от 200 тыс. руб</h3>
+                                        <div class="buttons">
+                                            <a href="#" class="btn-img btn-img--3">
+                                                <span>Подробнее</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="swiper-slide-container">
+                                <div class="location">
+                                    <div class="location__icon">
+                                        <i class="icon icon-location"></i>
+                                    </div>
+                                    <span class="t-2">Симферопольское шоссе <br>110 км. от МКАД</span>
+                                </div>
+                                <div class="content">
+                                    <div class="content__img">
+                                        <picture>
+                                            <source srcset="img/slide-4.webp" type="image/webp">
+                                            <img src="img/slide-4.png" alt="slide" width="624"
+                                                 height="626">
+                                        </picture>
+                                    </div>
+                                    <div class="content__text">
+                                        <div class="chips">
+                                            <div class="chips__item">
+                                                <i class="icon icon-shopping-cart"></i>
+                                                <span class="b-1">В продаже</span>
+                                            </div>
+                                            <div class="chips__item">
+                                                <i class="icon icon-house"></i>
+                                                <span class="b-1">Единый стиль</span>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="location__icon">
+                                                <i class="icon icon-location"></i>
+                                            </div>
+                                            <span class="t-3">Симферопольское шоссе 110 км. от МКАД</span>
+                                        </div>
+                                        <h2 class="content__text__title hp">Гатница</h2>
+                                        <h3 class="content__text__subtitle">участки от 200 тыс. руб</h3>
+                                        <div class="buttons">
+                                            <a href="#" class="btn-img btn-img--4">
+                                                <span>Подробнее</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="swiper-slide-container">
+                                <div class="location">
+                                    <div class="location__icon">
+                                        <i class="icon icon-location"></i>
+                                    </div>
+                                    <span class="t-2">Симферопольское шоссе <br>110 км. от МКАД</span>
+                                </div>
+                                <div class="content">
+                                    <div class="content__img">
+                                        <picture>
+                                            <source srcset="img/slide-5.webp" type="image/webp">
+                                            <img src="img/slide-5.png" alt="slide" width="624"
+                                                 height="626">
+                                        </picture>
+                                    </div>
+                                    <div class="content__text">
+                                        <div class="chips">
+                                            <div class="chips__item">
+                                                <i class="icon icon-shopping-cart"></i>
+                                                <span class="b-1">В продаже</span>
+                                            </div>
+                                            <div class="chips__item">
+                                                <i class="icon icon-house"></i>
+                                                <span class="b-1">Единый стиль</span>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="location__icon">
+                                                <i class="icon icon-location"></i>
+                                            </div>
+                                            <span class="t-3">Симферопольское шоссе 110 км. от МКАД</span>
+                                        </div>
+                                        <h2 class="content__text__title hp">Посёлок 5</h2>
+                                        <h3 class="content__text__subtitle">участки от 200 тыс. руб</h3>
+                                        <div class="buttons">
+                                            <a href="#" class="btn-img btn-img--5">
+                                                <span>Подробнее</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="swiper-slide-container">
+                                <div class="location">
+                                    <div class="location__icon">
+                                        <i class="icon icon-location"></i>
+                                    </div>
+                                    <span class="t-2">Симферопольское шоссе <br>110 км. от МКАД</span>
+                                </div>
+                                <div class="content">
+                                    <div class="content__img">
+                                        <picture>
+                                            <source srcset="img/slide-6.webp" type="image/webp">
+                                            <img src="img/slide-6.png" alt="slide" width="624"
+                                                 height="626">
+                                        </picture>
+                                    </div>
+                                    <div class="content__text">
+                                        <div class="chips">
+                                            <div class="chips__item">
+                                                <i class="icon icon-shopping-cart"></i>
+                                                <span class="b-1">В продаже</span>
+                                            </div>
+                                            <div class="chips__item">
+                                                <i class="icon icon-house"></i>
+                                                <span class="b-1">Единый стиль</span>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="location__icon">
+                                                <i class="icon icon-location"></i>
+                                            </div>
+                                            <span class="t-3">Симферопольское шоссе 110 км. от МКАД</span>
+                                        </div>
+                                        <h2 class="content__text__title hp">Посёлок 6</h2>
+                                        <h3 class="content__text__subtitle">участки от 200 тыс. руб</h3>
+                                        <div class="buttons">
+                                            <a href="#" class="btn-img btn-img--6">
+                                                <span>Подробнее</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="swiper-slide-container">
+                                <div class="location">
+                                    <div class="location__icon">
+                                        <i class="icon icon-location"></i>
+                                    </div>
+                                    <span class="t-2">Симферопольское шоссе <br>110 км. от МКАД</span>
+                                </div>
+                                <div class="content">
+                                    <div class="content__img">
+                                        <picture>
+                                            <source srcset="img/slide-7.webp" type="image/webp">
+                                            <img src="img/slide-7.png" alt="slide" width="624"
+                                                 height="626">
+                                        </picture>
+                                    </div>
+                                    <div class="content__text">
+                                        <div class="chips">
+                                            <div class="chips__item">
+                                                <i class="icon icon-shopping-cart"></i>
+                                                <span class="b-1">В продаже</span>
+                                            </div>
+                                            <div class="chips__item">
+                                                <i class="icon icon-house"></i>
+                                                <span class="b-1">Единый стиль</span>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="location__icon">
+                                                <i class="icon icon-location"></i>
+                                            </div>
+                                            <span class="t-3">Симферопольское шоссе 110 км. от МКАД</span>
+                                        </div>
+                                        <h2 class="content__text__title hp">Посёлок 7</h2>
+                                        <h3 class="content__text__subtitle">участки от 200 тыс. руб</h3>
+                                        <div class="buttons">
+                                            <a href="#" class="btn-img btn-img--7">
+                                                <span>Подробнее</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="swiper-slide-container">
+                                <div class="location">
+                                    <div class="location__icon">
+                                        <i class="icon icon-location"></i>
+                                    </div>
+                                    <span class="t-2">Симферопольское шоссе <br>110 км. от МКАД</span>
+                                </div>
+                                <div class="content">
+                                    <div class="content__img">
+                                        <picture>
+                                            <source srcset="img/slide-8.webp" type="image/webp">
+                                            <img src="img/slide-8.png" alt="slide" width="624"
+                                                 height="626">
+                                        </picture>
+                                    </div>
+                                    <div class="content__text">
+                                        <div class="chips">
+                                            <div class="chips__item">
+                                                <i class="icon icon-shopping-cart"></i>
+                                                <span class="b-1">В продаже</span>
+                                            </div>
+                                            <div class="chips__item">
+                                                <i class="icon icon-house"></i>
+                                                <span class="b-1">Единый стиль</span>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="location__icon">
+                                                <i class="icon icon-location"></i>
+                                            </div>
+                                            <span class="t-3">Симферопольское шоссе 110 км. от МКАД</span>
+                                        </div>
+                                        <h2 class="content__text__title hp">Посёлок 8</h2>
+                                        <h3 class="content__text__subtitle">участки от 200 тыс. руб</h3>
+                                        <div class="buttons">
+                                            <a href="#" class="btn-img btn-img--8">
+                                                <span>Подробнее</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="swiper-slide-container">
+                                <div class="location">
+                                    <div class="location__icon">
+                                        <i class="icon icon-location"></i>
+                                    </div>
+                                    <span class="t-2">Симферопольское шоссе <br>110 км. от МКАД</span>
+                                </div>
+                                <div class="content">
+                                    <div class="content__img">
+                                        <picture>
+                                            <source srcset="img/slide-9.webp" type="image/webp">
+                                            <img src="img/slide-9.png" alt="slide" width="624"
+                                                 height="626">
+                                        </picture>
+                                    </div>
+                                    <div class="content__text">
+                                        <div class="chips">
+                                            <div class="chips__item">
+                                                <i class="icon icon-shopping-cart"></i>
+                                                <span class="b-1">В продаже</span>
+                                            </div>
+                                            <div class="chips__item">
+                                                <i class="icon icon-house"></i>
+                                                <span class="b-1">Единый стиль</span>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="location__icon">
+                                                <i class="icon icon-location"></i>
+                                            </div>
+                                            <span class="t-3">Симферопольское шоссе 110 км. от МКАД</span>
+                                        </div>
+                                        <h2 class="content__text__title hp">Посёлок 9</h2>
+                                        <h3 class="content__text__subtitle">участки от 200 тыс. руб</h3>
+                                        <div class="buttons">
+                                            <a href="#" class="btn-img btn-img--9">
+                                                <span>Подробнее</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="swiper-slide-container">
+                                <div class="location">
+                                    <div class="location__icon">
+                                        <i class="icon icon-location"></i>
+                                    </div>
+                                    <span class="t-2">Симферопольское шоссе <br>110 км. от МКАД</span>
+                                </div>
+                                <div class="content">
+                                    <div class="content__img">
+                                        <picture>
+                                            <source srcset="img/slide-10.webp" type="image/webp">
+                                            <img src="img/slide-10.png" alt="slide" width="624"
+                                                 height="626">
+                                        </picture>
+                                    </div>
+                                    <div class="content__text">
+                                        <div class="chips">
+                                            <div class="chips__item">
+                                                <i class="icon icon-shopping-cart"></i>
+                                                <span class="b-1">В продаже</span>
+                                            </div>
+                                            <div class="chips__item">
+                                                <i class="icon icon-house"></i>
+                                                <span class="b-1">Единый стиль</span>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="location__icon">
+                                                <i class="icon icon-location"></i>
+                                            </div>
+                                            <span class="t-3">Симферопольское шоссе 110 км. от МКАД</span>
+                                        </div>
+                                        <h2 class="content__text__title hp">Посёлок 10</h2>
+                                        <h3 class="content__text__subtitle">участки от 200 тыс. руб</h3>
+                                        <div class="buttons">
+                                            <a href="#" class="btn-img btn-img--10">
+                                                <span>Подробнее</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="swiper-slide-container">
+                                <div class="location">
+                                    <div class="location__icon">
+                                        <i class="icon icon-location"></i>
+                                    </div>
+                                    <span class="t-2">Симферопольское шоссе <br>110 км. от МКАД</span>
+                                </div>
+                                <div class="content">
+                                    <div class="content__img">
+                                        <picture>
+                                            <source srcset="img/slide-11.webp" type="image/webp">
+                                            <img src="img/slide-11.png" alt="slide" width="624"
+                                                 height="626">
+                                        </picture>
+                                    </div>
+                                    <div class="content__text">
+                                        <div class="chips">
+                                            <div class="chips__item">
+                                                <i class="icon icon-shopping-cart"></i>
+                                                <span class="b-1">В продаже</span>
+                                            </div>
+                                            <div class="chips__item">
+                                                <i class="icon icon-house"></i>
+                                                <span class="b-1">Единый стиль</span>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="location__icon">
+                                                <i class="icon icon-location"></i>
+                                            </div>
+                                            <span class="t-3">Симферопольское шоссе 110 км. от МКАД</span>
+                                        </div>
+                                        <h2 class="content__text__title hp">Посёлок 11</h2>
+                                        <h3 class="content__text__subtitle">участки от 200 тыс. руб</h3>
+                                        <div class="buttons">
+                                            <a href="#" class="btn-img btn-img--11">
+                                                <span>Подробнее</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="swiper-slide-container">
+                                <div class="location">
+                                    <div class="location__icon">
+                                        <i class="icon icon-location"></i>
+                                    </div>
+                                    <span class="t-2">Симферопольское шоссе <br>110 км. от МКАД</span>
+                                </div>
+                                <div class="content">
+                                    <div class="content__img">
+                                        <picture>
+                                            <source srcset="img/slide-12.webp" type="image/webp">
+                                            <img src="img/slide-12.png" alt="slide" width="624"
+                                                 height="626">
+                                        </picture>
+                                    </div>
+                                    <div class="content__text">
+                                        <div class="chips">
+                                            <div class="chips__item">
+                                                <i class="icon icon-shopping-cart"></i>
+                                                <span class="b-1">В продаже</span>
+                                            </div>
+                                            <div class="chips__item">
+                                                <i class="icon icon-house"></i>
+                                                <span class="b-1">Единый стиль</span>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="location__icon">
+                                                <i class="icon icon-location"></i>
+                                            </div>
+                                            <span class="t-3">Симферопольское шоссе 110 км. от МКАД</span>
+                                        </div>
+                                        <h2 class="content__text__title hp">Посёлок 12</h2>
+                                        <h3 class="content__text__subtitle">участки от 200 тыс. руб</h3>
+                                        <div class="buttons">
+                                            <a href="#" class="btn-img btn-img--12">
+                                                <span>Подробнее</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="swiper-slide-container">
+                                <div class="location">
+                                    <div class="location__icon">
+                                        <i class="icon icon-location"></i>
+                                    </div>
+                                    <span class="t-2">Симферопольское шоссе <br>110 км. от МКАД</span>
+                                </div>
+                                <div class="content">
+                                    <div class="content__img">
+                                        <picture>
+                                            <source srcset="img/slide-13.webp" type="image/webp">
+                                            <img src="img/slide-13.png" alt="slide" width="624"
+                                                 height="626">
+                                        </picture>
+                                    </div>
+                                    <div class="content__text">
+                                        <div class="chips">
+                                            <div class="chips__item">
+                                                <i class="icon icon-shopping-cart"></i>
+                                                <span class="b-1">В продаже</span>
+                                            </div>
+                                            <div class="chips__item">
+                                                <i class="icon icon-house"></i>
+                                                <span class="b-1">Единый стиль</span>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="location__icon">
+                                                <i class="icon icon-location"></i>
+                                            </div>
+                                            <span class="t-3">Симферопольское шоссе 110 км. от МКАД</span>
+                                        </div>
+                                        <h2 class="content__text__title hp">Посёлок 13</h2>
+                                        <h3 class="content__text__subtitle">участки от 200 тыс. руб</h3>
+                                        <div class="buttons">
+                                            <a href="#" class="btn-img btn-img--13">
+                                                <span>Подробнее</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next btn btn-round">
+                    <i class="icon icon-arrow-right-1"></i>
+                </div>
+                <div class="swiper-button-prev btn btn-round">
+                    <i class="icon icon-arrow-left"></i>
+                </div>
+            </div>
+            <div class="promo__slider__footer">
+                <div class="thumb thumb-home active">
+                    <div class="thumb-home__btn">
+                        <picture class="thumb__img">
+                            <source srcset="img/logo-icon.webp" type="image/webp">
+                            <img src="img/logo-icon.png" alt="icon" width="70" height="70">
+                        </picture>
+                    </div>
+                </div>
+                <div class="promo__slider__footer--inner">
+                    <div class="wrapper">
+                        <div class="swiper-container gallery-thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide__fake"></div>
+                                <div class="swiper-slide thumb">
+                                    <picture class="thumb__img">
+                                        <source srcset="img/icon-1.webp" type="image/webp">
+                                        <img src="img/icon-1.png" alt="icon" width="76" height="80">
+                                    </picture>
+                                    <div class="thumb__text">
+                                        <p class="thumb__text__title h-3">лучистое</p>
+                                        <p class="thumb__text__desc t-2">от 200 тыс.руб.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide thumb">
+                                    <picture class="thumb__img">
+                                        <source srcset="img/icon-2.webp" type="image/webp">
+                                        <img src="img/icon-2.png" alt="icon" width="67" height="77">
+                                    </picture>
+                                    <div class="thumb__text">
+                                        <p class="thumb__text__title h-3">Мега</p>
+                                        <p class="thumb__text__desc t-2">от 200 тыс.руб.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide thumb">
+                                    <picture class="thumb__img">
+                                        <source srcset="img/icon-3.webp" type="image/webp">
+                                        <img src="img/icon-3.png" alt="icon" width="70" height="71">
+                                    </picture>
+                                    <div class="thumb__text">
+                                        <p class="thumb__text__title h-3">Гельвеция</p>
+                                        <p class="thumb__text__desc t-2">от 200 тыс.руб.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide thumb">
+                                    <picture class="thumb__img">
+                                        <source srcset="img/icon-4.webp" type="image/webp">
+                                        <img src="img/icon-4.png" alt="icon" width="73" height="79">
+                                    </picture>
+                                    <div class="thumb__text">
+                                        <p class="thumb__text__title h-3">Гатница</p>
+                                        <p class="thumb__text__desc t-2">от 200 тыс.руб.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide thumb">
+                                    <picture class="thumb__img">
+                                        <source srcset="img/icon-5.webp" type="image/webp">
+                                        <img src="img/icon-5.png" alt="icon" width="73" height="79">
+                                    </picture>
+                                    <div class="thumb__text">
+                                        <p class="thumb__text__title h-3">Посёлок 5</p>
+                                        <p class="thumb__text__desc t-2">от 200 тыс.руб.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide thumb">
+                                    <picture class="thumb__img">
+                                        <source srcset="img/icon-6.webp" type="image/webp">
+                                        <img src="img/icon-6.png" alt="icon" width="73" height="79">
+                                    </picture>
+                                    <div class="thumb__text">
+                                        <p class="thumb__text__title h-3">Посёлок 6</p>
+                                        <p class="thumb__text__desc t-2">от 200 тыс.руб.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide thumb">
+                                    <picture class="thumb__img">
+                                        <source srcset="img/icon-7.webp" type="image/webp">
+                                        <img src="img/icon-7.png" alt="icon" width="73" height="79">
+                                    </picture>
+                                    <div class="thumb__text">
+                                        <p class="thumb__text__title h-3">Посёлок 7</p>
+                                        <p class="thumb__text__desc t-2">от 200 тыс.руб.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide thumb">
+                                    <picture class="thumb__img">
+                                        <source srcset="img/icon-8.webp" type="image/webp">
+                                        <img src="img/icon-8.png" alt="icon" width="73" height="79">
+                                    </picture>
+                                    <div class="thumb__text">
+                                        <p class="thumb__text__title h-3">Посёлок 8</p>
+                                        <p class="thumb__text__desc t-2">от 200 тыс.руб.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide thumb">
+                                    <picture class="thumb__img">
+                                        <source srcset="img/icon-9.webp" type="image/webp">
+                                        <img src="img/icon-9.png" alt="icon" width="73" height="79">
+                                    </picture>
+                                    <div class="thumb__text">
+                                        <p class="thumb__text__title h-3">Посёлок 9</p>
+                                        <p class="thumb__text__desc t-2">от 200 тыс.руб.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide thumb">
+                                    <picture class="thumb__img">
+                                        <source srcset="img/icon-10.webp" type="image/webp">
+                                        <img src="img/icon-10.png" alt="icon" width="73" height="79">
+                                    </picture>
+                                    <div class="thumb__text">
+                                        <p class="thumb__text__title h-3">Посёлок 10</p>
+                                        <p class="thumb__text__desc t-2">от 200 тыс.руб.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide thumb">
+                                    <picture class="thumb__img">
+                                        <source srcset="img/icon-11.webp" type="image/webp">
+                                        <img src="img/icon-11.png" alt="icon" width="73" height="79">
+                                    </picture>
+                                    <div class="thumb__text">
+                                        <p class="thumb__text__title h-3">Посёлок 11</p>
+                                        <p class="thumb__text__desc t-2">от 200 тыс.руб.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide thumb">
+                                    <picture class="thumb__img">
+                                        <source srcset="img/icon-12.webp" type="image/webp">
+                                        <img src="img/icon-12.png" alt="icon" width="73" height="79">
+                                    </picture>
+                                    <div class="thumb__text">
+                                        <p class="thumb__text__title h-3">Посёлок 12</p>
+                                        <p class="thumb__text__desc t-2">от 200 тыс.руб.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide thumb">
+                                    <picture class="thumb__img">
+                                        <source srcset="img/icon-13.webp" type="image/webp">
+                                        <img src="img/icon-13.png" alt="icon" width="73" height="79">
+                                    </picture>
+                                    <div class="thumb__text">
+                                        <p class="thumb__text__title h-3">Посёлок 13</p>
+                                        <p class="thumb__text__desc t-2">от 200 тыс.руб.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-after">
+        <div class="wrapper">
+            <ul class="tabs">
+                <li data-tab="1" class="tabs__tab b-1 active">
+                    Текущий год
+                </li>
+                <li data-tab="2" class="tabs__tab b-1">
+                    2022 г.
+                </li>
+                <li data-tab="3" class="tabs__tab b-1">
+                    2021 г.
+                </li>
+                <li data-tab="4" class="tabs__tab b-1">
+                    2020 г.
+                </li>
+            </ul>
+            <div class="tabs-content">
+                <div data-tab-content="1" class="tabs-content__pane active">
+                    <div class="swiper-container slider-two">
+                        <div class="swiper-wrapper">
+                            <a href="img/slide.png" class="swiper-slide" data-fancybox="gallery-1">
+                                <picture>
+                                    <source srcset="img/slide.webp" type="image/webp">
+                                    <img src="img/slide.png" alt="slide" width="1344" height="760">
+                                </picture>
+                            </a>
+                            <a href="img/video.MP4" class="swiper-slide" data-fancybox="gallery-1">
+                                <video width="100%" height="100%" autoplay loop muted>
+                                    <source src="img/video.MP4" type="video/mp4">
+                                </video>
+                            </a>
+                            <a href="img/slide.png" class="swiper-slide" data-fancybox="gallery-1">
+                                <picture>
+                                    <source srcset="img/slide.webp" type="image/webp">
+                                    <img src="img/slide.png" alt="slide" width="1344" height="760">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="swiper-button-next btn btn-round-white">
+                            <i class="icon icon-arrow-right-1"></i>
+                        </div>
+                        <div class="swiper-button-prev btn btn-round-white">
+                            <i class="icon icon-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <div data-tab-content="2" class="tabs-content__pane">
+                    <div class="swiper-container slider-two">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/slide.webp" type="image/webp">
+                                    <img src="img/slide.png" alt="slide" width="1344" height="760">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/slide.webp" type="image/webp">
+                                    <img src="img/slide.png" alt="slide" width="1344" height="760">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/slide.webp" type="image/webp">
+                                    <img src="img/slide.png" alt="slide" width="1344" height="760">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next btn btn-round-white">
+                            <i class="icon icon-arrow-right-1"></i>
+                        </div>
+                        <div class="swiper-button-prev btn btn-round-white">
+                            <i class="icon icon-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <div data-tab-content="3" class="tabs-content__pane">
+                    <div class="swiper-container slider-two">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/slide.webp" type="image/webp">
+                                    <img src="img/slide.png" alt="slide" width="1344" height="760">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/slide.webp" type="image/webp">
+                                    <img src="img/slide.png" alt="slide" width="1344" height="760">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/slide.webp" type="image/webp">
+                                    <img src="img/slide.png" alt="slide" width="1344" height="760">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next btn btn-round-white">
+                            <i class="icon icon-arrow-right-1"></i>
+                        </div>
+                        <div class="swiper-button-prev btn btn-round-white">
+                            <i class="icon icon-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <div data-tab-content="4" class="tabs-content__pane">
+                    <div class="swiper-container slider-two">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/slide.webp" type="image/webp">
+                                    <img src="img/slide.png" alt="slide" width="1344" height="760">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/slide.webp" type="image/webp">
+                                    <img src="img/slide.png" alt="slide" width="1344" height="760">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/slide.webp" type="image/webp">
+                                    <img src="img/slide.png" alt="slide" width="1344" height="760">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next btn btn-round-white">
+                            <i class="icon icon-arrow-right-1"></i>
+                        </div>
+                        <div class="swiper-button-prev btn btn-round-white">
+                            <i class="icon icon-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section section-advantage">
+        <div class="wrapper">
+            <div class="section-advantage__text">
+                <h3 class="h-3">для нас важна</h3>
+                <h2 class="h-1">УМНАЯ ЗАСТРОЙКА ТЕРРИТОРИИ посёлка</h2>
+            </div>
+            <div class="section-advantage__content">
+                <picture class="section-advantage__content__picture">
+                    <source srcset="img/advantage.webp" type="image/webp">
+                    <img src="img/advantage.png" alt="advantage" width="592" height="592">
+                </picture>
+                <div class="section-advantage__content__items js-hover__items">
+                    <div class="section-advantage__content__items__item js-hover__item">
+                        <h4 class="h-2">Место для дома</h4>
+                        <p class="t-1">Мы размещаем дома на участке именно в том месте, которое определено
+                            архитектурным планом,
+                            чтобы все построенные дома в круге или на улице гармонично смотрелись друг с другом.</p>
+                        <div class="pulse"></div>
+                    </div>
+                    <div class="section-advantage__content__items__item js-hover__item">
+                        <h4 class="h-2">Дострой свой дом</h4>
+                        <p class="t-1">Мы стремимся избежать недостроев и брошенных построек, поэтому просим пройти процедуру совместного с вами согласования вашего проекта дома.</p>
+                        <div class="pulse"></div>
+                    </div>
+                    <div class="section-advantage__content__items__item js-hover__item">
+                        <h4 class="h-2">сначала ограждение</h4>
+                        <p class="t-1">Перед началом стройки вам необходимо установить невысокий коричневый
+                            штакетник, который определен для всех участков M202.</p>
+                        <div class="pulse"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-portfolio">
+        <div class="wrapper">
+            <h3 class="h-3">дома</h3>
+            <h2 class="h-1">согласованные Проекты домов от наших партнёров</h2>
+            <div class="section-portfolio__partners">
+                <div class="section-portfolio__partners__item">
+                    <img src="img/partner-1.svg" alt="partner" width="166" height="56">
+                </div>
+                <div class="section-portfolio__partners__item">
+                    <img src="img/partner-2.svg" alt="partner" width="166" height="56">
+                </div>
+                <div class="section-portfolio__partners__item">
+                    <img src="img/partner-3.svg" alt="partner" width="166" height="56">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-container section-portfolio__slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide section-portfolio__slider__slide">
+                    <div class="section-portfolio__slider__slide__picture">
+                        <picture>
+                            <source srcset="img/portfolio-3.webp" type="image/webp">
+                            <img src="img/portfolio-3.png" alt="slide" width="806" height="633">
+                        </picture>
+                    </div>
+                    <div class="section-portfolio__slider__slide__text">
+                        <div class="text__desc">
+                            <p class="t-1">256м<sub>2</sub></p>
+                            <div>
+                                <i class="icon icon icon-house"></i>
+                                <span class="t-1">согласован</span>
+                            </div>
+                        </div>
+                        <h4 class="h-2">ПРОект №33</h4>
+                    </div>
+                </a>
+                <a href="#" class="swiper-slide section-portfolio__slider__slide">
+                    <div class="section-portfolio__slider__slide__picture">
+                        <picture>
+                            <source srcset="img/portfolio-2.webp" type="image/webp">
+                            <img src="img/portfolio-2.png" alt="slide" width="802" height="632">
+                        </picture>
+                    </div>
+                    <div class="section-portfolio__slider__slide__text">
+                        <div class="text__desc">
+                            <p class="t-1">120м<sub>2</sub></p>
+                            <div>
+                                <i class="icon icon icon-house"></i>
+                                <span class="t-1">построен</span>
+                            </div>
+                        </div>
+                        <h4 class="h-2">ПРОект №29</h4>
+                    </div>
+                </a>
+                <a href="#" class="swiper-slide section-portfolio__slider__slide">
+                    <div class="section-portfolio__slider__slide__picture">
+                        <picture>
+                            <source srcset="img/portfolio-3.webp" type="image/webp">
+                            <img src="img/portfolio-3.png" alt="slide" width="806" height="633">
+                        </picture>
+                    </div>
+                    <div class="section-portfolio__slider__slide__text">
+                        <div class="text__desc">
+                            <p class="t-1">256м<sub>2</sub></p>
+                            <div>
+                                <i class="icon icon icon-house"></i>
+                                <span class="t-1">согласован</span>
+                            </div>
+                        </div>
+                        <h4 class="h-2">ПРОект №33</h4>
+                    </div>
+                </a>
+                <a href="#" class="swiper-slide section-portfolio__slider__slide">
+                    <div class="section-portfolio__slider__slide__picture">
+                        <picture>
+                            <source srcset="img/portfolio-2.webp" type="image/webp">
+                            <img src="img/portfolio-2.png" alt="slide" width="802" height="632">
+                        </picture>
+                    </div>
+                    <div class="section-portfolio__slider__slide__text">
+                        <div class="text__desc">
+                            <p class="t-1">320м<sub>2</sub></p>
+                            <div>
+                                <i class="icon icon icon-house"></i>
+                                <span class="t-1">построен</span>
+                            </div>
+                        </div>
+                        <h4 class="h-2">ПРОект №39</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-button-next btn btn-round-white">
+                <i class="icon icon-arrow-right-1"></i>
+            </div>
+            <div class="swiper-button-prev btn btn-round-white">
+                <i class="icon icon-arrow-left"></i>
+            </div>
+        </div>
+        <div class="section-portfolio__links">
+            <a href="#" class="btn">Все проекты</a>
+            <button class="btn-img js-modal" data-modal="#modal_1">
+                <span>стать партнёром</span>
+            </button>
+        </div>
+    </section>
+    <section class="section-white section-numbers">
+        <div class="wrapper">
+            <div class="inner">
+                <div class="section-numbers__items">
+                    <div class="section-numbers__items__item">
+                        <div class="section-numbers__items__item__number">
+                            <span>45</span>
+                        </div>
+                        <p class="h-3">домов построено</p>
+                    </div>
+                    <div class="section-numbers__items__item">
+                        <div class="section-numbers__items__item__number">
+                            <span>5.5</span>
+                            <span>млн. руб</span>
+                        </div>
+                        <p class="h-3">средняя стоимость дома </p>
+                    </div>
+                    <div class="section-numbers__items__item">
+                        <div class="section-numbers__items__item__number">
+                            <span>35</span>
+                        </div>
+                        <p class="h-3">проектов согласовано</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-relaxation">
+        <div class="wrapper">
+            <h3 class="h-3">лето в m2o2</h3>
+            <h2 class="h-1">отдохните у нас вместе с детьми и близкими</h2>
+            <div class="section-relaxation__items">
+                <a href="#" class="section-relaxation__items__item">
+                    <div class="section-relaxation__items__item__text">
+                        <h4 class="h-3">РАССЛАБЬТЕСЬ<br>НА ПЛЯЖЕ</h4>
+                        <p class="t-1">Почувствуйте прохладу воды нашего озера, позвольте детям плескаться.</p>
+                    </div>
+                    <picture class="section-relaxation__items__item__picture">
+                        <source srcset="img/relaxation-1.webp" type="image/webp">
+                        <img src="img/relaxation-1.png" alt="relaxation" width="294" height="294">
+                    </picture>
+                </a>
+                <a href="#" class="section-relaxation__items__item">
+                    <div class="section-relaxation__items__item__text">
+                        <h4 class="h-3">РЫБАЛКА<br>ДЛЯ ВСЕХ</h4>
+                        <p class="t-1">Насладитесь азартом во время ловли нашего карпа.</p>
+                    </div>
+                    <picture class="section-relaxation__items__item__picture">
+                        <source srcset="img/relaxation-2.webp" type="image/webp">
+                        <img src="img/relaxation-2.png" alt="relaxation" width="294" height="294">
+                    </picture>
+                </a>
+                <a href="#" class="section-relaxation__items__item">
+                    <div class="section-relaxation__items__item__text">
+                        <h4 class="h-3">ОЗДОРОВИТЕЛЬНАЯ<br>ТРОПА</h4>
+                        <p class="t-1">Наполнитесь чистым кислородом во время прогулки по теренкуру.</p>
+                    </div>
+                    <picture class="section-relaxation__items__item__picture">
+                        <source srcset="img/relaxation-3.webp" type="image/webp">
+                        <img src="img/relaxation-3.png" alt="relaxation" width="294" height="294">
+                    </picture>
+                </a>
+                <a href="#" class="section-relaxation__items__item">
+                    <div class="section-relaxation__items__item__text">
+                        <h4 class="h-3">ОСТАНЬТЕСЬ<br>НА НОЧЬ</h4>
+                        <p class="t-1">Проведите время с близкими, наблюдая за гладью воды и островками.</p>
+                    </div>
+                    <picture class="section-relaxation__items__item__picture">
+                        <source srcset="img/relaxation-4.webp" type="image/webp">
+                        <img src="img/relaxation-4.png" alt="relaxation" width="294" height="294">
+                    </picture>
+                </a>
+            </div>
+            <div class="section-relaxation__links">
+                <a href="#" class="btn-img">
+                    <span>подробнее об отдыхе</span>
+                </a>
+                <a href="#" class="btn">
+                    Галерея
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section-white section-links">
+        <div class="wrapper">
+            <div class="inner">
+                <div class="section-links__content">
+                    <p class="t-1">далее</p>
+                    <h2 class="section__title">Проекты</h2>
+                    <a href="#" class="btn btn-round-orange">
+                        <i class="icon icon-arrow-right-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Main end -->
+
+<!--Cookies-->
+<div class="cookies cookies-disabled">
+    <div class="container cookies__wrap">
+        <h4 class="cookies__title h-4">Мы используем куки для улучшения работы сайта</h4>
+        <div class="cookies__text t-3">Оставаясь с нами, вы соглашаетесь на использование
+            <a href="https://dev.lokeodata.ru/legal/privacypolicy/" class="cookies__link"
+               target="_blank">файлов куки</a>
+        </div>
+        <button class="btn btn-secondary cookies__button">
+            <span>ОК</span>
+        </button>
+    </div>
+</div>
+<!--Cookies-->
+
+<!-- Footer start -->
+<footer class="footer">
+    <div class="footer__top">
+        <div class="wrapper">
+            <div class="footer__items">
+                <div class="footer__items__company">
+                    <a href="#">
+                        <picture>
+                            <source srcset="img/logo-text.webp" type="image/webp">
+                            <img src="img/logo-text.png" alt="logo" width="131"
+                                 height="48">
+                        </picture>
+                    </a>
+                    <div class="footer__items__company__text">
+                        <p class="t-2">Весь контент на сайте носит информационный характер и не является публичной
+                            офертой, определяемой ст. 437(2) ГК РФ</p>
+                    </div>
+                </div>
+                <div class="footer__items__nav">
+                    <ul class="footer__list">
+                        <li class="footer__list__item">
+                            <span class="footer__list__title">Карта сайта</span>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#" class="footer__list__link link b-2">Проекты</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#" class="footer__list__link link b-2">Генплан</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#" class="footer__list__link link b-2">Отдых</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list__item">
+                            <span class="footer__list__title">Актуально</span>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#" class="footer__list__link link b-2">Галерея</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#" class="footer__list__link link b-2">Отзывы</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#" class="footer__list__link link b-2">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list footer__list__contacts">
+                        <li class="footer__list__item">
+                            <span class="footer__list__title">Связь с нами</span>
+                        </li>
+                        <li class="footer__list__item">
+                            <span class="t-2">покупка участков</span>
+                            <a href="tel:+7 (495) 241-6000" class="footer__list__link link t-1">
+                                +7 (495) 241-6000
+                            </a>
+                        </li>
+                        <li class="footer__list__item">
+                            <span class="t-2">отдых</span>
+                            <a href="tel:+7 (499) 460-4251" class="footer__list__link link t-1">
+                                +7 (499) 460-4251
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list footer__list__social">
+                        <li class="footer__list__item">
+                            <a href="#" class="btn btn-round">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#tg"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#" class="btn btn-round">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="wrapper">
+            <div class="footer__bottom__items">
+                <div class="footer__bottom__items__item footer__bottom__items__conf">
+                    <a href="#" class="link link--underline">Политика конфиденциальности</a>
+                    <a href="#" class="link link--underline">Пользовательское соглашение</a>
+                </div>
+                <div class="footer__bottom__items__item">
+                    <p class="t-2">© M2o2 2018-2023</p>
+                    <a href="#" class="footer__bottom__items__item__logo link">
+                        <span class="t-2">разработано - </span>
+                        <svg>
+                            <use xlink:href="img/sprite.svg#logo-5AM"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer end -->
+
+<!--Modal start-->
+<div id="modal_1" class="modal">
+    <button class="modal__close js-modal__close">
+        X
+    </button>
+    <form class="modal__content">
+        <h3 class="modal__content__title">Купить в 1 клик</h3>
+        <label for="phone"></label>
+        <input type="tel" name="phone" id="phone" placeholder="+ 7 (---) --- -- -- "
+               class="modal__content__input phone-mask">
+        <label for="name"></label>
+        <input type="text" name="name" id="name" placeholder="Ваше имя"
+               class="modal__content__input">
+        <div class="modal__content__conf">
+            <p>Нажимая кнопку “Отправить”, я даю согласие на обработку моих персональных данных в соответствии с</p>
+            <a href="#">Условиями конфиденциальности</a>
+        </div>
+        <button class="btn">Отправить</button>
+    </form>
+</div>
+<div class="modal__backdrop" id="modal-backdrop"></div>
+<!--Modal end-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/TextPlugin.min.js"></script>
+</body>
+
+</html>
